@@ -46,9 +46,8 @@ export const SearchListIcon = styled(Feather)`
 
 export const TitlesSection = styled.View`
 
-   flex: 1;
    width: 100%;
-   height: 86px;
+
    background-color: ${({theme}) => theme.colors.primary_background};
 
    padding: 0 24px;
@@ -72,4 +71,14 @@ export const Title = styled.Text`
 
    color: ${({theme}) => theme.colors.dark};
 
+`;
+
+export const CharsMenuSection = styled.View`
+
+   width: 100%;
+   flex-direction: row;
+
+   justify-content: flex-start;
+   margin-top: ${RFValue(32)}px;
+  
 `;

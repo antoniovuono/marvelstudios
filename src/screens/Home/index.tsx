@@ -3,6 +3,8 @@ import { StatusBar } from 'react-native';
 
 import Logotipo from '../../assets/images/logotipo.svg';
 
+import { CharsMenu } from '../../components/CharsMenu';
+
 import {
  Container,
  Header,
@@ -13,6 +15,7 @@ import {
  TitlesSection,
  SubTitle,
  Title,
+ CharsMenuSection
 } from './styles';
 
 export function Home(){
@@ -48,6 +51,15 @@ return (
       <Title>Escolha o seu personagem</Title>
 
     </TitlesSection>
+
+    <CharsMenuSection>
+       <CharsMenu type="heros" onPress={() => {}}/>
+       <CharsMenu type="villains" onPress={() => {}}/>
+       <CharsMenu type="anti-heros" onPress={() => {}}/>
+       <CharsMenu type="alliens" onPress={() => {}}/>
+       <CharsMenu type="humans" onPress={() => {}}/>
+
+    </CharsMenuSection>
 
       
   </Container>
