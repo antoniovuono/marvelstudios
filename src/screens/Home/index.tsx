@@ -1,14 +1,14 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
-import { Plataform } from "react-native";
 
 import Logotipo from '../../assets/images/logotipo.svg';
 
 import {
  Container,
  Header,
- IconListIcon,
+ IconList,
  SearchListIcon,
+ ButtonIconList,
  HeaderContent
 } from './styles';
 
@@ -24,11 +24,17 @@ return (
 
     <Header>
       <HeaderContent>
-        <IconListIcon name="list" />
+
+        <ButtonIconList onPress={() => {}}>
+        <IconList name="list" />
+        </ButtonIconList>
 
         <Logotipo />
 
+        <ButtonIconList onPress={() => {}}>
         <SearchListIcon name="search"/>
+        </ButtonIconList>
+
       </HeaderContent>
     </Header>
 

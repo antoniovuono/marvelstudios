@@ -33,12 +33,14 @@ export const Title = styled.Text`
    font-family: 'gilroy-bold';
 `;
 
-export const IconListIcon = styled(Feather)`
+export const IconList = styled(Feather)`
 
    color: ${({theme}) => theme.colors.dark};
    font-size: ${RFValue(24)}px;
 
 `;
+
+export const ButtonIconList = styled.TouchableOpacity``;
 
 export const SearchListIcon = styled(Feather)`
 
