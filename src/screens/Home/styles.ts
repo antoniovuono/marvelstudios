@@ -1,6 +1,7 @@
 import styled from 'styled-components/native';
 import { Feather } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
+import { Platform } from "react-native";
 
 export const Container = styled.View`
    flex: 1;
@@ -15,8 +16,9 @@ export const Header = styled.View`
    background-color: ${({theme}) => theme.colors.primary_background};
    justify-content: flex-start;
 
-   margin-top: ${RFValue(30)}px;
    padding: 24px 26px;
+
+   margin-top: ${Platform.OS === 'android' ? 15 : 35}px;
 `;
 
 export const HeaderContent = styled.View`

@@ -1,5 +1,6 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
+import { Plataform } from "react-native";
 
 import Logotipo from '../../assets/images/logotipo.svg';
 
