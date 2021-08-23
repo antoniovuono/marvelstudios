@@ -6,6 +6,8 @@ export const Container = styled.View`
    justify-content: center;
 `;
 
+export const Header = styled.View``;
+
 export const Title = styled.Text`
- font-family: ${({theme}) => theme.fonts.bold};
+   font-family: 'gilroy-bold';
 `;

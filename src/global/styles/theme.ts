@@ -5,8 +5,4 @@ export default {
         primary_dark: '#313140',
         primary_grey: '#B7B7CB',
     },
-    fonts: {
-        regular: require('../../assets/fonts/gilroy-regular.ttf'),
-        bold: require('../../assets/fonts/gilroy-bold.ttf'),
-    }
 }
