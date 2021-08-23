@@ -1,8 +1,12 @@
 export default {
     colors: {
-        primary_red: '#F2264B',
-        primary_black: '#000000',
-        primary_dark: '#313140',
-        primary_grey: '#B7B7CB',
+
+        primary_background: '#FFFFFF',
+        secondary_background: '#000000',
+
+        primary_title: '#F2264B',
+        secondary_title: '#B7B7CB',
+
+        dark: '#313140',
     },
 }
