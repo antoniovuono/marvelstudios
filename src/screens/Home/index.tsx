@@ -1,4 +1,5 @@
 import React from 'react';
+import { Menu } from '../../components/Menu';
 
 import {
  Container,
@@ -8,6 +9,8 @@ import {
 export function Home(){
 return (
   <Container> 
+    <Menu />
+
       <Title>Welcome to the marvel app!</Title>
   </Container>
   );
