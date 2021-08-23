@@ -29,10 +29,6 @@ export const HeaderContent = styled.View`
      
 `;
 
-export const Title = styled.Text`
-   font-family: 'gilroy-bold';
-`;
-
 export const IconList = styled(Feather)`
 
    color: ${({theme}) => theme.colors.dark};
@@ -46,4 +42,34 @@ export const SearchListIcon = styled(Feather)`
 
    color: ${({theme}) => theme.colors.dark}; 
    font-size: ${RFValue(24)}px;
+`;
+
+export const TitlesSection = styled.View`
+
+   flex: 1;
+   width: 100%;
+   height: 86px;
+   background-color: ${({theme}) => theme.colors.primary_background};
+
+   padding: 0 24px;
+   margin-top: ${RFValue(24)}px;
+
+`;
+
+export const SubTitle = styled.Text`
+
+   font-family: 'gilroy-semibold';
+   font-size: ${RFValue(14)}px;
+   color: ${({theme}) => theme.colors.secondary_title};
+
+`;
+
+export const Title = styled.Text`
+
+   font-family: 'gilroy-heavy';
+   font-size: ${RFValue(32)}px;
+   margin-top: ${RFValue(8)}px;
+
+   color: ${({theme}) => theme.colors.dark};
+
 `;

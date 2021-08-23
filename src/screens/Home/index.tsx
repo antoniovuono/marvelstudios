@@ -9,7 +9,10 @@ import {
  IconList,
  SearchListIcon,
  ButtonIconList,
- HeaderContent
+ HeaderContent,
+ TitlesSection,
+ SubTitle,
+ Title,
 } from './styles';
 
 export function Home(){
@@ -37,6 +40,14 @@ return (
 
       </HeaderContent>
     </Header>
+
+
+    <TitlesSection>
+
+      <SubTitle>Bem vindo ao Marvel Heroes</SubTitle>
+      <Title>Escolha o seu personagem</Title>
+
+    </TitlesSection>
 
       
   </Container>
