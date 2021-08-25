@@ -96,6 +96,8 @@ return (
 
     <PrimaryList>
 
+    <TitleList>Heróis</TitleList>
+
     <RaceCharacterList
 
       data={heros}

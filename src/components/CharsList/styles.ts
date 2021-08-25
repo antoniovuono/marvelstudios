@@ -10,7 +10,7 @@ export const Container = styled.View`
 
 `;
 
-export const CardCharacter = styled.View`
+export const CardCharacter = styled.TouchableOpacity`
 
  
    height: ${RFValue(230)}px;

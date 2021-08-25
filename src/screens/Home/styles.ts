@@ -19,7 +19,7 @@ export const Header = styled.View`
 
    padding: 24px 26px;
 
-   margin-top: ${Platform.OS === 'android' ? 15 : 35}px;
+   margin-top: ${Platform.OS === 'android' ? 18 : 45}px;
 `;
 
 export const HeaderContent = styled.View`
@@ -106,5 +106,6 @@ export const TitleList = styled.Text`
    color: ${({theme}) => theme.colors.primary_title};
 
    padding: 0 24px;
+   margin-bottom: ${RFValue(8)}px;
 
 `;

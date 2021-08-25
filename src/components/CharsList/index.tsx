@@ -18,15 +18,16 @@ interface CharDataProps {
 }
 
 
-export function CharsList({ alterEgo, name, imagePath }: CharDataProps){
+export function CharsList({ alterEgo, name, imagePath, ...rest }: CharDataProps){
 return (
  
   <Container> 
       
-      <CardCharacter>
+      <CardCharacter {...rest}>
 
           <BackgroundImage
            source={{ uri: imagePath }} 
+           resizeMode="contain"
            /> 
 
 
