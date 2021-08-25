@@ -9,19 +9,31 @@ import {
  Name,
 } from './styles';
 
-export function CharsList(){
+interface CharData {
+    alterEgo: string;
+    name: string;
+    imagePath: string;
+}
+
+interface Props {
+    data: CharData
+}
+
+export function CharsList({ data }: Props){
 return (
  
   <Container> 
       
       <CardCharacter>
 
-          <BackgroundImage source={{ uri: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628876294/spider-man_s79dx6.png' }} /> 
+          <BackgroundImage
+           source={{ uri: data.imagePath }} 
+           /> 
 
 
           <Details>
-          <AlterEgo>Peter Parker</AlterEgo>
-          <Name>Homem Aranha</Name>
+          <AlterEgo>{data.alterEgo}</AlterEgo>
+          <Name>{data.name}</Name>
           </Details>
 
     

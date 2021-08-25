@@ -20,15 +20,9 @@ export const CardCharacter = styled.View`
 
    justify-content: flex-end;
 
- 
-
-
-
-
 `;
 
 export const BackgroundImage = styled.Image`
-
 
    position: absolute;
 
@@ -36,8 +30,6 @@ export const BackgroundImage = styled.Image`
    width: ${RFValue(140)}px;
 
    border-radius: 15px;
-
-
 
 `;
 

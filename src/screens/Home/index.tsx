@@ -22,6 +22,12 @@ import {
 } from './styles';
 
 export function Home(){
+  const charData = {
+    alterEgo: 'Peter Parker',
+    name: 'Homem Aranha',
+    imagePath: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628876294/spider-man_s79dx6.png'
+  }
+
 return (
   <Container> 
 
@@ -69,9 +75,8 @@ return (
       
      
 
-      <CharsList />
+      <CharsList data={charData}/>
 
-      <CharsList />
 
     </PrimaryList>
 
