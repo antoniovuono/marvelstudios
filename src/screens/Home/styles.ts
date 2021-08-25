@@ -78,13 +78,13 @@ export const CharsMenuSection = styled.View`
    width: 100%;
    flex-direction: row;
 
-   justify-content: flex-start;
    margin-top: ${RFValue(32)}px;
   
 `;
 
 export const PrimaryList = styled.ScrollView`
    margin-top: ${RFValue(25)}px;
+
 `;
 
 export const TitleList = styled.Text`

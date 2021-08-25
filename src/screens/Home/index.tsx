@@ -63,9 +63,13 @@ return (
        <CharsMenu type="humans" onPress={() => {}}/>
     </CharsMenuSection>
 
-    <PrimaryList>
+    <PrimaryList
+       horizontal={true}
+    >
       
-      <TitleList>Heróis</TitleList>
+     
+
+      <CharsList />
 
       <CharsList />
 

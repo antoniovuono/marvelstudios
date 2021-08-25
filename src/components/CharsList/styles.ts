@@ -3,7 +3,11 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
    flex: 1;
-   padding: 8px 15px;
+   width: 100%;
+
+   margin-left: 22px;
+  
+
 `;
 
 export const CardCharacter = styled.View`
@@ -15,6 +19,10 @@ export const CardCharacter = styled.View`
    border-radius: 15px;
 
    justify-content: flex-end;
+
+ 
+
+
 
 
 `;
@@ -28,6 +36,7 @@ export const BackgroundImage = styled.Image`
    width: ${RFValue(140)}px;
 
    border-radius: 15px;
+
 
 
 `;
