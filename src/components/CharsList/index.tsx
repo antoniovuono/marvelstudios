@@ -15,15 +15,16 @@ interface CharDataProps {
     alterEgo: string;
     name: string;
     imagePath: string;
+    onPress: () => void;
 }
 
 
-export function CharsList({ alterEgo, name, imagePath, ...rest }: CharDataProps){
+export function CharsList({ alterEgo, name, imagePath, onPress, ...rest }: CharDataProps){
 return (
  
   <Container> 
       
-      <CardCharacter {...rest}>
+      <CardCharacter onPress={onPress} {...rest}>
 
           <BackgroundImage
            source={{ uri: imagePath }} 
