@@ -82,3 +82,17 @@ export const CharsMenuSection = styled.View`
    margin-top: ${RFValue(32)}px;
   
 `;
+
+export const PrimaryList = styled.ScrollView`
+   margin-top: ${RFValue(25)}px;
+`;
+
+export const TitleList = styled.Text`
+
+   font-family: 'gilroy-bold';
+   font-size: ${RFValue(18)}px;
+   color: ${({theme}) => theme.colors.primary_title};
+
+   padding: 0 24px;
+
+`;

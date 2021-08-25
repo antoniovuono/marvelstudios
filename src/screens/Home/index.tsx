@@ -3,6 +3,7 @@ import { StatusBar } from 'react-native';
 
 import Logotipo from '../../assets/images/logotipo.svg';
 
+import { CharsList } from '../../components/CharsList';
 import { CharsMenu } from '../../components/CharsMenu';
 
 import {
@@ -15,7 +16,9 @@ import {
  TitlesSection,
  SubTitle,
  Title,
- CharsMenuSection
+ CharsMenuSection,
+ PrimaryList,
+ TitleList,
 } from './styles';
 
 export function Home(){
@@ -58,8 +61,15 @@ return (
        <CharsMenu type="anti-heros" onPress={() => {}}/>
        <CharsMenu type="alliens" onPress={() => {}}/>
        <CharsMenu type="humans" onPress={() => {}}/>
-
     </CharsMenuSection>
+
+    <PrimaryList>
+      
+      <TitleList>Heróis</TitleList>
+
+      <CharsList />
+
+    </PrimaryList>
 
       
   </Container>
