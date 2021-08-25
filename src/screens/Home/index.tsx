@@ -100,7 +100,7 @@ return (
 
       data={heros}
       keyExtractor={item => item.alterEgo}
-      renderItem={({item }) =>  <CharsList imagePath={{ uri: item.imagePath }} alterEgo={item.alterEgo} name={item.name} />}
+      renderItem={({item }) =>  <CharsList imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
 
     />
 
