@@ -1,10 +1,13 @@
-import React from 'react';
+import React,{ useState, useEffect} from 'react';
 import { StatusBar } from 'react-native';
+
 
 import Logotipo from '../../assets/images/logotipo.svg';
 
 import { CharsList } from '../../components/CharsList';
 import { CharsMenu } from '../../components/CharsMenu';
+
+import  dataList  from "../../utils/application.json";
 
 import {
  Container,
@@ -19,14 +22,36 @@ import {
  CharsMenuSection,
  PrimaryList,
  TitleList,
+ RaceCharacterList,
 } from './styles';
 
+interface CharacterProps {
+  alterEgo: string;
+  name: string;
+  imagePath: string;
+}
+
 export function Home(){
-  const charData = {
-    alterEgo: 'Peter Parker',
-    name: 'Homem Aranha',
-    imagePath: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628876294/spider-man_s79dx6.png'
+  const [ heros, setHeros ] = useState<CharacterProps[]>([]);
+
+
+  function loadHerosData() {
+    const herosFormated = dataList.heroes.map((item: CharacterProps) => {
+
+          return {
+            alterEgo: item.alterEgo,
+            name: item.name,
+            imagePath: item.imagePath
+          }
+    });
+
+    console.log(herosFormated);
+    setHeros(herosFormated);
   }
+
+  useEffect(() => {
+    loadHerosData();
+  }, []);
 
 return (
   <Container> 
@@ -69,13 +94,15 @@ return (
        <CharsMenu type="humans" onPress={() => {}}/>
     </CharsMenuSection>
 
-    <PrimaryList
-       horizontal={true}
-    >
-      
-     
+    <PrimaryList>
 
-      <CharsList data={charData}/>
+    <RaceCharacterList
+
+      data={heros}
+      keyExtractor={item => item.alterEgo}
+      renderItem={({item }) =>  <CharsList imagePath={{ uri: item.imagePath }} alterEgo={item.alterEgo} name={item.name} />}
+
+    />
 
 
     </PrimaryList>

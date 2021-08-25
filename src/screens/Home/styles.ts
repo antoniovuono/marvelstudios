@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { FlatList } from "react-native";
 import { Feather } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { Platform } from "react-native";
@@ -84,6 +85,17 @@ export const CharsMenuSection = styled.View`
 
 export const PrimaryList = styled.ScrollView`
    margin-top: ${RFValue(25)}px;
+
+`;
+
+export const RaceCharacterList = styled(
+   FlatList as new () => FlatList).attrs({
+
+      horizontal:true,
+      showsHorizontalScrollIndicator:false,
+      
+   })`
+
 
 `;
 

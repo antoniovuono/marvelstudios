@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImageProps } from 'react-native';
 
 import {
  Container,
@@ -9,17 +10,15 @@ import {
  Name,
 } from './styles';
 
-interface CharData {
+
+interface CharDataProps {
     alterEgo: string;
     name: string;
     imagePath: string;
 }
 
-interface Props {
-    data: CharData
-}
 
-export function CharsList({ data }: Props){
+export function CharsList({ alterEgo, name, imagePath }: CharDataProps){
 return (
  
   <Container> 
@@ -27,13 +26,13 @@ return (
       <CardCharacter>
 
           <BackgroundImage
-           source={{ uri: data.imagePath }} 
+           source={{ uri: imagePath }} 
            /> 
 
 
           <Details>
-          <AlterEgo>{data.alterEgo}</AlterEgo>
-          <Name>{data.name}</Name>
+          <AlterEgo>{alterEgo}</AlterEgo>
+          <Name>{name}</Name>
           </Details>
 
     
