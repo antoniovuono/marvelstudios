@@ -1,5 +1,4 @@
 import React from 'react';
-import { ImageProps } from 'react-native';
 
 import {
  Container,
@@ -24,7 +23,7 @@ return (
  
   <Container> 
       
-      <CardCharacter onPress={onPress} {...rest}>
+      <CardCharacter onPress={onPress}  {...rest}>
 
           <BackgroundImage
            source={{ uri: imagePath }} 

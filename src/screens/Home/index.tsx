@@ -1,4 +1,5 @@
-import React,{ useState, useEffect} from 'react';
+import React,{ useState, useEffect } from 'react';
+import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'react-native';
 
 
@@ -34,6 +35,7 @@ interface CharacterProps {
 export function Home(){
   const [ heros, setHeros ] = useState<CharacterProps[]>([]);
 
+  const navigation = useNavigation();
 
   function loadHerosData() {
     const herosFormated = dataList.heroes.map((item: CharacterProps) => {
@@ -45,7 +47,7 @@ export function Home(){
           }
     });
 
-    console.log(herosFormated);
+    //console.log(herosFormated);
     setHeros(herosFormated);
   }
 
@@ -102,7 +104,7 @@ return (
 
       data={heros}
       keyExtractor={item => item.alterEgo}
-      renderItem={({item }) =>  <CharsList onPress={() => {}} imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
+      renderItem={({item }) =>  <CharsList onPress={() => navigation.navigate("SpiderMan")}  imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
 
     />
 
