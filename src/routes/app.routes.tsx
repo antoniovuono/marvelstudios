@@ -3,7 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import { Home  } from '../screens/Home';
 import { SpiderMan } from "../screens/Heros/SpiderMan";
-import { BalckPanter } from "../screens/Heros/BalckPanter";
+import { BlackPanter } from "../screens/Heros/BlackPanter";
 import { IronMan } from "../screens/Heros/IronMan";
 
 const { Navigator, Screen} = createStackNavigator();
@@ -26,7 +26,7 @@ return (
 
           <Screen
           name="BlackPanter"
-          component={BalckPanter}
+          component={BlackPanter}
           />
 
           <Screen 

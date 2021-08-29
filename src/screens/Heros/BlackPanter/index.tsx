@@ -5,7 +5,7 @@ import {
  Title,
 } from './styles';
 
-export function BalckPanter(){
+export function BlackPanter(){
 return (
   <Container> 
 
