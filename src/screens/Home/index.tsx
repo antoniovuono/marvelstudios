@@ -1,7 +1,7 @@
 import React,{ useState, useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { StatusBar } from 'react-native';
-
+import { StatusBar, ActivityIndicator } from 'react-native';
+import { useTheme } from 'styled-components';
 
 import Logotipo from '../../assets/images/logotipo.svg';
 
@@ -24,6 +24,7 @@ import {
  PrimaryList,
  TitleList,
  RaceCharacterList,
+ LoadContainer
 } from './styles';
 
 interface CharacterProps {
@@ -35,10 +36,11 @@ interface CharacterProps {
 
 
 export function Home(){
+  const[ isLoading, setIsLoading ] = useState(true);
   const [ heros, setHeros ] = useState<CharacterProps[]>([]);
 
   const navigation = useNavigation();
-
+  const theme = useTheme();
   
   function loadHerosData() {
     const herosFormated = dataList.heroes.map((item: CharacterProps) => {
@@ -53,6 +55,8 @@ export function Home(){
 
     console.log(herosFormated);
     setHeros(herosFormated);
+
+    setIsLoading(false);
   }
 
   useEffect(() => {
@@ -61,6 +65,12 @@ export function Home(){
 
 return (
   <Container> 
+
+    {
+
+      isLoading ? <LoadContainer><ActivityIndicator color={theme.colors.primary_title} size="large" /></LoadContainer> : 
+
+    <>
 
     <StatusBar 
      barStyle="dark-content"
@@ -114,6 +124,9 @@ return (
 
 
     </PrimaryList>
+    
+    </>
+    }
 
       
   </Container>
