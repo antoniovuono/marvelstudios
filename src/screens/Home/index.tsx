@@ -53,7 +53,7 @@ export function Home(){
           }
     });
 
-    console.log(herosFormated);
+    //console.log(herosFormated);
     setHeros(herosFormated);
 
     setIsLoading(false);

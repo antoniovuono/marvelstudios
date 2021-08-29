@@ -3,14 +3,8 @@ import { Feather } from '@expo/vector-icons';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { RFValue } from 'react-native-responsive-fontsize';
 
-export const Container = styled.ImageBackground`
-   flex: 1;
-
-`;
-
-export const Header = styled.View`
-
-   width: 100%;
+export const Container = styled.View`
+     width: 100%;
    height: 64px;
 
    justify-content: center;
@@ -20,9 +14,12 @@ export const Header = styled.View`
    margin-top: ${getStatusBarHeight() + 14}px;
 `;
 
+
 export const ArrowIcon = styled(Feather)`
 
    color: ${({theme}) => theme.colors.primary_background};
    font-size: ${RFValue(24)}px;
 `;
+
+export const BackButton= styled.TouchableOpacity``;
 
