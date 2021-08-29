@@ -30,6 +30,7 @@ interface CharacterProps {
   alterEgo: string;
   name: string;
   imagePath: string;
+  route: string;
 }
 
 
@@ -45,11 +46,12 @@ export function Home(){
           return {
             alterEgo: item.alterEgo,
             name: item.name,
-            imagePath: item.imagePath
+            imagePath: item.imagePath,
+            route: item.route
           }
     });
 
-    //console.log(herosFormated);
+    console.log(herosFormated);
     setHeros(herosFormated);
   }
 
@@ -106,7 +108,7 @@ return (
 
       data={heros}
       keyExtractor={item => item.alterEgo}
-      renderItem={({item }) => <CharsList onPress={() => navigation.navigate("SpiderMan")}  imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
+      renderItem={({item }) => <CharsList onPress={() => navigation.navigate(item.route)}  imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
 
     />
 

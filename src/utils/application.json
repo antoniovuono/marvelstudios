@@ -5,6 +5,7 @@
 			"alterEgo": "Peter Parker",
 			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628876294/spider-man_s79dx6.png",
 			"biography": "Em Forest Hills, Queens, Nova York, o estudante de ensino médio, Peter Parker, é um cientista orfão que vive com seu tio Ben e tia May. Ele é mordido por uma aranha radioativa em uma exposição científica e adquire a agilidade e a força proporcional de um aracnídeo. Junto com a super força, Parker ganha a capacidade de andar nas paredes e tetos. Através de sua habilidade nativa para a ciência, ele desenvolve um aparelho que o permitir lançar teias artificiais. Inicialmente buscando capitalizar suas novas habilidades, Parker cria um traje e, como Homem Aranha, torna-se uma estrela de televisão.",
+			"route": "SpiderMan",
 			"caracteristics": {
 				"birth": "1990",
 				"weight": {
@@ -37,6 +38,7 @@
 			"alterEgo": "T'Challa",
 			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628876953/black-panther_uxhzxc.png",
 			"biography": "O Pantera Negra é o título cerimonial atribuído ao chefe da Tribo Pantera da avançada nação africana de Wakanda. Além de governar o país, ele também é chefe de suas várias tribos (coletivamente conhecida como Wakandas). O uniforme do Pantera é um símbolo oficial (chefe de estado) e é usado mesmo durante missões diplomáticas. O Pantera é um título hereditário, mas ainda é preciso ganhar um desafio. No passado distante, um enorme meteorito maciço composto de vibranium - elemento que absorve o som, entre outras propriedades especiais - caiu em Wakanda, e é desenterrado uma geração antes dos eventos do presente.",
+			"route": "BlackPanter",
 			"caracteristics": {
 				"birth": "1973",
 				"weight": {
@@ -68,6 +70,7 @@
 			"alterEgo": "Tony Stark",
 			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628877008/iron-man_cfxmw9.png",
 			"biography": "Durante a guerra do Vietnã, o inventor e empresário Tony Stark foi vítima de uma explosão de granada. Stark sobreviveu à explosão mas estilhaços do explosivo se alojaram próximo ao seu coração, ameaçando sua vida. Ele foi capturado e levado até o líder Wong Chu, que o forçou a criar uma poderosa arma, mas ele criou algo que o mantivesse vivo e permitisse derrotar os captores. O Homem de Ferro enfrentou os soldados e os derrotou. Sua armadura resistia aos disparos contra ele. Wong Chu tentou fugir e o Homem de Ferro incendiou o galpão de munições fazendo com que a explosão o matasse.",
+			"route": "IronMan",
 			"caracteristics": {
 				"birth": "1970",
 				"weight": {
