@@ -32,11 +32,13 @@ interface CharacterProps {
   imagePath: string;
 }
 
+
 export function Home(){
   const [ heros, setHeros ] = useState<CharacterProps[]>([]);
 
   const navigation = useNavigation();
 
+  
   function loadHerosData() {
     const herosFormated = dataList.heroes.map((item: CharacterProps) => {
 
@@ -104,7 +106,7 @@ return (
 
       data={heros}
       keyExtractor={item => item.alterEgo}
-      renderItem={({item }) =>  <CharsList onPress={() => navigation.navigate("SpiderMan")}  imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
+      renderItem={({item }) => <CharsList onPress={() => navigation.navigate("SpiderMan")}  imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
 
     />
 
