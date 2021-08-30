@@ -26,4 +26,9 @@ export const ArrowIcon = styled(Feather)`
    font-size: ${RFValue(24)}px;
 `;
 
+export const DetailsList = styled.ScrollView`
+
+   background-color: ${({theme}) => theme.colors.secondary_background};
+   margin-top: ${RFValue(217)}px;
+`;
 
