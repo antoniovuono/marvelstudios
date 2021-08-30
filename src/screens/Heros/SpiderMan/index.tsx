@@ -1,13 +1,21 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
-import { CharactersPage } from '../../../components/CharactersPage';
 
 import { Header } from '../../../components/Header';
+
+import AgeSvg from '../../../assets/icons/age.svg';
+import WeightSvg from '../../../assets/icons/weight.svg';
+import HeightSvg from '../../../assets/icons/height.svg';
+import UniverseSvg from '../../../assets/icons/universe.svg';
 
 
 import {
  Container,
- DetailsList
+ DetailsList,
+ TitleConttent,
+ AlterEgo,
+ Name,
+ CaracteristicsConent,
 
 } from './styles';
 
@@ -27,10 +35,22 @@ return (
       <Header />
 
         <DetailsList>
-        <CharactersPage />
+
+        <TitleConttent>
+            <AlterEgo>  Peter Parker</AlterEgo>
+            <Name> Homem {`\n`} Aranha</Name>
+            </TitleConttent>
+
+
+            <CaracteristicsConent>
+                <AgeSvg />
+                <WeightSvg />
+                <HeightSvg />
+                <UniverseSvg />
+            </CaracteristicsConent>
+
 
         </DetailsList>
-  
       </Container>
   </>
   );

@@ -32,3 +32,40 @@ export const DetailsList = styled.ScrollView`
    margin-top: ${RFValue(217)}px;
 `;
 
+export const TitleConttent = styled.View`
+
+    padding: 23px 23px;
+
+`;
+
+export const AlterEgo = styled.Text`
+
+    color: ${({theme}) => theme.colors.primary_background};
+    font-size: ${RFValue(16)}px;
+    font-family: 'gilroy-medium';
+
+
+`;
+
+export const Name = styled.Text`
+
+    color: ${({theme}) => theme.colors.primary_background};
+    font-size: ${RFValue(40)}px;
+    font-family: 'gilroy-heavy';
+
+    margin-top: 8px;
+
+`;
+
+export const CaracteristicsConent = styled.View`
+
+    width: 100%;
+    height: 65px;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+   padding: 24px;
+`;
+
+
