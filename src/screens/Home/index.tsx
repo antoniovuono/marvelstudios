@@ -71,7 +71,7 @@ export function Home(){
       }
 
     });
-    console.log(villainsFormatted);
+   // console.log(villainsFormatted);
     setVillains(villainsFormatted);
   }
 
