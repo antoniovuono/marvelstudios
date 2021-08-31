@@ -38,6 +38,7 @@ interface CharacterProps {
 export function Home(){
   const[ isLoading, setIsLoading ] = useState(true);
   const [ heros, setHeros ] = useState<CharacterProps[]>([]);
+  const [ villains, setVillains ] = useState<CharacterProps[]>([]);
 
   const navigation = useNavigation();
   const theme = useTheme();
@@ -59,8 +60,25 @@ export function Home(){
     setIsLoading(false);
   }
 
+  function loadVillainsData() {
+    const villainsFormatted = dataList.villains.map((item: CharacterProps) => {
+
+      return {
+        alterEgo: item.alterEgo,
+        name: item.name,
+        imagePath: item.imagePath,
+        route: item.route
+      }
+
+    });
+
+    console.log(villainsFormatted);
+  }
+
+
   useEffect(() => {
     loadHerosData();
+    loadVillainsData();
   }, []);
 
 return (
@@ -122,6 +140,9 @@ return (
 
     />
     
+    <TitleList>Vilões</TitleList>
+    
+  
 
 
     </PrimaryList>

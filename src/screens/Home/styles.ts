@@ -106,7 +106,8 @@ export const TitleList = styled.Text`
    color: ${({theme}) => theme.colors.primary_title};
 
    padding: 0 24px;
-   margin-bottom: ${RFValue(8)}px;
+   margin-top: ${RFValue(20)}px;
+   margin-bottom: ${RFValue(12)}px;
 
 `;
 

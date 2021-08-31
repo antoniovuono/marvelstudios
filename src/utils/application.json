@@ -110,6 +110,7 @@
 			"alterEgo": "Jöhann Schmidt",
 			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628949990/red-skull_e6gtui.png",
 			"biography": "Jöhann Schmidt é filho de um camponês analfabeto e bêbado. Sua mãe morreu ao lhe dar a luz e seu pai, que tentou afogá-lo por causa disso em uma bacia e foi contido pelo obstetra, logo em seguida suicídou-se. Schmidt fugiu aos sete anos do orfanato onde foi criado, cresceu nas ruas da Alemanha, sendo preso várias vezes por pequenos crimes. Hitler encontrou Schmidt quando ele trabalhava como camareiro em um hotel no qual o líder nazista se hospedou. Hitler o treinou pessoalmente, oferecendo ao final do processo uma máscara vermelha no formato de um crânio e o nome que carrega até hoje.",
+			"route": "RedSkrull",
 			"caracteristics": {
 				"birth": "1941",
 				"weight": {
@@ -139,6 +140,7 @@
 			"alterEgo": "Victor Von Doom",
 			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628950011/dr-doom_brgiuu.png",
 			"biography": "Victor nasceu em Haasenstadt, um vilarejo que fica na Latvéria, filho de Werner von Doom, um conhecido curandeiro cigano, e Cynthia von Doom, que diziam ser uma bruxa. Sua mãe foi morta quando ele ainda era uma criança. Ela tentara adquirir poder para proteger sua tribo cigana da perseguição que sofriam por parte do governo vigente sobre a Latvéria. Cynthia tentou obter esse poder através de um trato com o demônio Mephisto. Victor von Doom ficou aos cuidados de Bóris, um dos membros da comunidade cigana de que pertencia. Victor jurou que faria o mundo todo pagar pela morte de seus pais.",
+			"route": "DrDestiny",
 			"caracteristics": {
 				"birth": "1962",
 				"weight": {
@@ -168,6 +170,7 @@
 			"alterEgo": "Norman Osborn",
 			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628950033/green-goblin_c8czoy.png",
 			"biography": "Filho do rico empresário Amberson Osborn, Norman foi vítima de abuso quando o pai perdeu seu dinheiro e se tornou alcóolatra e violento, o que iniciou suas tendências homicidas e o desejo de ser um chefe de família melhor. Norman estudou química, administração e engenharia elétrica na faculdade, onde conheceu sua futura esposa Emily, mãe de seu filho Harry Osborn. Após formar, Norman se uniu a seu professor Mendel Stromm para fundar a empresa química Oscorp, que logo o tornaria milionário de novo, porém quando Emily morre Norman fica abalado a ponto de focar mais e mais no trabalho, neglicenciando a criação do filho.",
+			"route": "GreenElf",
 			"caracteristics": {
 				"birth": "1974",
 				"weight": {
