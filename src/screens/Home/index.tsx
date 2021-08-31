@@ -121,14 +121,13 @@ return (
       renderItem={({item }) => <CharsList onPress={() => navigation.navigate(item.route)}  imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
 
     />
+    
 
 
     </PrimaryList>
     
     </>
     }
-
-      
   </Container>
   );
 }

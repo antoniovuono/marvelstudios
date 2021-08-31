@@ -8,14 +8,15 @@ import WeightSvg from '../../../assets/icons/weight.svg';
 import HeightSvg from '../../../assets/icons/height.svg';
 import UniverseSvg from '../../../assets/icons/universe.svg';
 
+import StrenghtBars from '../../../assets/images/strengthbars.svg';
+import IntelligenceBars from '../../../assets/images/intelligencebars.svg';
+import AgillityBars from '../../../assets/images/agillitybars.svg';
+import EnduranceBars from '../../../assets/images/endurancebars.svg';
+import VelocityBars from '../../../assets/images/velocitybars.svg';
+
 
 import {
  Container,
- DetailsList,
- TitleConttent,
- AlterEgo,
- Name,
- CaracteristicsConent,
 
 } from './styles';
 
@@ -34,23 +35,9 @@ return (
 
       <Header />
 
-        <DetailsList>
+    
 
-        <TitleConttent>
-            <AlterEgo>  Peter Parker</AlterEgo>
-            <Name> Homem {`\n`} Aranha</Name>
-            </TitleConttent>
-
-
-            <CaracteristicsConent>
-                <AgeSvg />
-                <WeightSvg />
-                <HeightSvg />
-                <UniverseSvg />
-            </CaracteristicsConent>
-
-
-        </DetailsList>
+           
       </Container>
   </>
   );
