@@ -71,7 +71,6 @@ export function Home(){
       }
 
     });
-
     console.log(villainsFormatted);
     setVillains(villainsFormatted);
   }
@@ -132,7 +131,6 @@ return (
     <PrimaryList>
 
             <TitleList>Heróis</TitleList>
-
                 <RaceCharacterList
 
                   data={heros}
@@ -142,14 +140,14 @@ return (
                 />
                 
             <TitleList>Vilões</TitleList>
-            
                 <RaceCharacterList 
 
                   data={villains}
                   keyExtractor={item => item.alterEgo}
-                  renderItem={({item}) => <CharsList onPress={() => {}} imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
+                  renderItem={({item}) => <CharsList onPress={() => navigation.navigate(item.route)} imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
                 
                 />
+               
 
 
             </PrimaryList>
