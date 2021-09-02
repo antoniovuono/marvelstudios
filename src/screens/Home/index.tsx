@@ -3,12 +3,13 @@ import { useNavigation } from '@react-navigation/native';
 import { StatusBar, ActivityIndicator } from 'react-native';
 import { useTheme } from 'styled-components';
 
+import { api } from '../../services/api';
+import { CharacterDTO } from '../../dtos/CharacterDTO';
+
 import Logotipo from '../../assets/images/logotipo.svg';
 
 import { CharsList } from '../../components/CharsList';
 import { CharsMenu } from '../../components/CharsMenu';
-
-import  dataList  from "../../utils/application.json";
 
 import {
  Container,
@@ -23,70 +24,53 @@ import {
  CharsMenuSection,
  PrimaryList,
  TitleList,
- RaceCharacterList,
- LoadContainer
+ RaceCharacterList
 } from './styles';
-
-interface CharacterProps {
-  alterEgo: string;
-  name: string;
-  imagePath: string;
-  route: string;
-}
+import { Load } from '../../components/Load';
 
 
 export function Home(){
   const[ isLoading, setIsLoading ] = useState(true);
-  const [ heros, setHeros ] = useState<CharacterProps[]>([]);
-  const [ villains, setVillains ] = useState<CharacterProps[]>([]);
+  const [ heros, setHeros ] = useState<CharacterDTO[]>([]);
+  const [ villains, setVillains ] = useState<CharacterDTO[]>([]);
 
   const navigation = useNavigation();
   const theme = useTheme();
-  
-  function loadHerosData() {
-    const herosFormated = dataList.heroes.map((item: CharacterProps) => {
-
-          return {
-            alterEgo: item.alterEgo,
-            name: item.name,
-            imagePath: item.imagePath,
-            route: item.route
-          }
-    });
-
-    //console.log(herosFormated);
-    setHeros(herosFormated);
-
-    setIsLoading(false);
-  }
-
-  function loadVillainsData() {
-    const villainsFormatted = dataList.villains.map((item: CharacterProps) => {
-
-      return {
-        alterEgo: item.alterEgo,
-        name: item.name,
-        imagePath: item.imagePath,
-        route: item.route
-      }
-
-    });
-   // console.log(villainsFormatted);
-    setVillains(villainsFormatted);
-  }
-
 
   useEffect(() => {
-    loadHerosData();
-    loadVillainsData();
+
+    async function fetchHeros() {
+      try {
+        const response = await api.get('/heroes');
+        
+        setHeros(response.data);
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    async function fetchVillains() {
+      try {
+        const response = await api.get('/villains');
+
+        setVillains(response.data)
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setIsLoading(false);
+      }
+      
+    }
+
+    fetchHeros();
+    fetchVillains();
+    
   }, []);
 
 return (
   <Container> 
-
-    {
-
-      isLoading ? <LoadContainer><ActivityIndicator color={theme.colors.primary_title} size="large" /></LoadContainer> : 
 
     <>
 
@@ -128,7 +112,10 @@ return (
        <CharsMenu type="humans" onPress={() => {}}/>
     </CharsMenuSection>
 
-    <PrimaryList>
+
+    { isLoading ? <Load /> : 
+
+     <PrimaryList>
 
             <TitleList>Heróis</TitleList>
                 <RaceCharacterList
@@ -150,10 +137,12 @@ return (
                
 
 
-            </PrimaryList>
+      </PrimaryList>
+
+      }
             
     </>
-    }
+    
   </Container>
   );
 }
