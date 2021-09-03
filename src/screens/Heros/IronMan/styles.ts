@@ -27,13 +27,3 @@ export const ArrowIcon = styled(Feather)`
    font-size: ${RFValue(24)}px;
 `;
 
-export const DetailsContent = styled.View``;
-
-export const NameContent = styled.View``;
-
-export const AlterEgo = styled.Text``;
-
-export const Name = styled.Text``;
-
-export const CaractContent = styled.View``;
-
