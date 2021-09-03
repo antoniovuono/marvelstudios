@@ -31,7 +31,7 @@ return (
         />
 
 
-       <Container source={{ uri: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628877008/iron-man_cfxmw9.png' }}> 
+       <Container source={{ uri: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628877008/marvelstudios/characters/iron-man_cfxmw9.png' }}> 
 
        <Header />
 

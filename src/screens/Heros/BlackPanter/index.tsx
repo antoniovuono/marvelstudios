@@ -31,7 +31,7 @@ return (
     />
 
 
-      <Container source={{ uri: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628876953/black-panther_uxhzxc.png' }}> 
+      <Container source={{ uri: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628876953/marvelstudios/characters/black-panther_uxhzxc.png' }}> 
 
       <Header />
 

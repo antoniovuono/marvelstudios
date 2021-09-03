@@ -114,3 +114,4 @@ export const SkillsContent = styled.View`
 
 `;
 
+export const MoviesContent = styled.View``;

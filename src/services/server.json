@@ -3,7 +3,7 @@
 		{
 			"name": "Homem Aranha",
 			"alterEgo": "Peter Parker",
-			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628876294/spider-man_s79dx6.png",
+			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628876294/marvelstudios/characters/spider-man_s79dx6.png",
 			"biography": "Em Forest Hills, Queens, Nova York, o estudante de ensino médio, Peter Parker, é um cientista orfão que vive com seu tio Ben e tia May. Ele é mordido por uma aranha radioativa em uma exposição científica e adquire a agilidade e a força proporcional de um aracnídeo. Junto com a super força, Parker ganha a capacidade de andar nas paredes e tetos. Através de sua habilidade nativa para a ciência, ele desenvolve um aparelho que o permitir lançar teias artificiais. Inicialmente buscando capitalizar suas novas habilidades, Parker cria um traje e, como Homem Aranha, torna-se uma estrela de televisão.",
 			"route": "SpiderMan",
 			"caracteristics": {
@@ -26,17 +26,17 @@
 				"velocity": 80
 			},
 			"movies": [
-				"./movies/captain-america-3.jpg",
-				"./movies/spider-man-homecoming.jpg",
-				"./movies/avengers-3.jpg",
-				"./movies/avengers-4.jpg",
-				"./movies/spider-man-far-from-home.jpg"
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639549/marvelstudios/movies/captain-america-3_ik0fsu.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639486/marvelstudios/movies/spider-man-homecoming_ad0z4d.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639510/marvelstudios/movies/avengers-3_rbxwcf.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639512/marvelstudios/movies/avengers-4_s48wah.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639424/marvelstudios/movies/spider-man-far-from-home_o2mfjh.jpg"
 			]
 		},
 		{
 			"name": "Pantera Negra",
 			"alterEgo": "T'Challa",
-			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628876953/black-panther_uxhzxc.png",
+			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628876953/marvelstudios/characters/black-panther_uxhzxc.png",
 			"biography": "O Pantera Negra é o título cerimonial atribuído ao chefe da Tribo Pantera da avançada nação africana de Wakanda. Além de governar o país, ele também é chefe de suas várias tribos (coletivamente conhecida como Wakandas). O uniforme do Pantera é um símbolo oficial (chefe de estado) e é usado mesmo durante missões diplomáticas. O Pantera é um título hereditário, mas ainda é preciso ganhar um desafio. No passado distante, um enorme meteorito maciço composto de vibranium - elemento que absorve o som, entre outras propriedades especiais - caiu em Wakanda, e é desenterrado uma geração antes dos eventos do presente.",
 			"route": "BlackPanter",
 			"caracteristics": {
@@ -68,7 +68,7 @@
 		{
 			"name": "Homem de Ferro",
 			"alterEgo": "Tony Stark",
-			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628877008/iron-man_cfxmw9.png",
+			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628877008/marvelstudios/characters/iron-man_cfxmw9.png",
 			"biography": "Durante a guerra do Vietnã, o inventor e empresário Tony Stark foi vítima de uma explosão de granada. Stark sobreviveu à explosão mas estilhaços do explosivo se alojaram próximo ao seu coração, ameaçando sua vida. Ele foi capturado e levado até o líder Wong Chu, que o forçou a criar uma poderosa arma, mas ele criou algo que o mantivesse vivo e permitisse derrotar os captores. O Homem de Ferro enfrentou os soldados e os derrotou. Sua armadura resistia aos disparos contra ele. Wong Chu tentou fugir e o Homem de Ferro incendiou o galpão de munições fazendo com que a explosão o matasse.",
 			"route": "IronMan",
 			"caracteristics": {
@@ -108,7 +108,7 @@
 		{
 			"name": "Caveira Vermelha",
 			"alterEgo": "Jöhann Schmidt",
-			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628949990/red-skull_e6gtui.png",
+			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628949990/marvelstudios/characters/red-skull_e6gtui.png",
 			"biography": "Jöhann Schmidt é filho de um camponês analfabeto e bêbado. Sua mãe morreu ao lhe dar a luz e seu pai, que tentou afogá-lo por causa disso em uma bacia e foi contido pelo obstetra, logo em seguida suicídou-se. Schmidt fugiu aos sete anos do orfanato onde foi criado, cresceu nas ruas da Alemanha, sendo preso várias vezes por pequenos crimes. Hitler encontrou Schmidt quando ele trabalhava como camareiro em um hotel no qual o líder nazista se hospedou. Hitler o treinou pessoalmente, oferecendo ao final do processo uma máscara vermelha no formato de um crânio e o nome que carrega até hoje.",
 			"route": "RedSkrull",
 			"caracteristics": {
@@ -138,7 +138,7 @@
 		{
 			"name": "Doutor Destino",
 			"alterEgo": "Victor Von Doom",
-			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628950011/dr-doom_brgiuu.png",
+			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628950011/marvelstudios/characters/dr-doom_brgiuu.png",
 			"biography": "Victor nasceu em Haasenstadt, um vilarejo que fica na Latvéria, filho de Werner von Doom, um conhecido curandeiro cigano, e Cynthia von Doom, que diziam ser uma bruxa. Sua mãe foi morta quando ele ainda era uma criança. Ela tentara adquirir poder para proteger sua tribo cigana da perseguição que sofriam por parte do governo vigente sobre a Latvéria. Cynthia tentou obter esse poder através de um trato com o demônio Mephisto. Victor von Doom ficou aos cuidados de Bóris, um dos membros da comunidade cigana de que pertencia. Victor jurou que faria o mundo todo pagar pela morte de seus pais.",
 			"route": "DrDestiny",
 			"caracteristics": {
@@ -168,7 +168,7 @@
 		{
 			"name": "Duende Verde",
 			"alterEgo": "Norman Osborn",
-			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628950033/green-goblin_c8czoy.png",
+			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628950033/marvelstudios/characters/green-goblin_c8czoy.png",
 			"biography": "Filho do rico empresário Amberson Osborn, Norman foi vítima de abuso quando o pai perdeu seu dinheiro e se tornou alcóolatra e violento, o que iniciou suas tendências homicidas e o desejo de ser um chefe de família melhor. Norman estudou química, administração e engenharia elétrica na faculdade, onde conheceu sua futura esposa Emily, mãe de seu filho Harry Osborn. Após formar, Norman se uniu a seu professor Mendel Stromm para fundar a empresa química Oscorp, que logo o tornaria milionário de novo, porém quando Emily morre Norman fica abalado a ponto de focar mais e mais no trabalho, neglicenciando a criação do filho.",
 			"route": "GreenElf",
 			"caracteristics": {

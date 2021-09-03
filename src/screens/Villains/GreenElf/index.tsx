@@ -19,7 +19,7 @@ return (
     />
 
 
-      <Container source={{ uri: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628950033/green-goblin_c8czoy.png' }}> 
+      <Container source={{ uri: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628950033/marvelstudios/characters/green-goblin_c8czoy.png' }}> 
 
       <Header />
 

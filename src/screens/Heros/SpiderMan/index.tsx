@@ -23,7 +23,9 @@ import {
  SecondParagrp,
  SkillsContent,
  SkillTitle,
+ MoviesContent
 } from './styles';
+import { MoviesList } from '../../../components/MoviesList';
 
 
 export function SpiderMan() {
@@ -36,7 +38,7 @@ return (
     />
 
 
-      <Container source={{ uri: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628876294/spider-man_s79dx6.png' }}> 
+      <Container source={{ uri: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628876294/marvelstudios/characters/spider-man_s79dx6.png' }}> 
 
       <Header />
 
@@ -77,6 +79,11 @@ return (
          <SkillsContent>
             <SkillsBars />
          </SkillsContent>
+
+         <MoviesContent>
+         <SkillTitle>Filmes</SkillTitle>
+           <MoviesList />
+         </MoviesContent>
 
       </DetailsContent>
 
