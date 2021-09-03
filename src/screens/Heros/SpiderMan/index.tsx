@@ -80,8 +80,6 @@ return (
 
       </DetailsContent>
 
-    
-
            
       </Container>
   </>
