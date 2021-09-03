@@ -2,6 +2,7 @@ import React from 'react';
 import { StatusBar } from 'react-native';
 
 import { Header } from '../../../components/Header';
+import { MoviesList } from '../../../components/MoviesList';
 
 import AgeSvg from '../../../assets/icons/age.svg';
 import WeightSvg from '../../../assets/icons/weight.svg';
@@ -25,7 +26,6 @@ import {
  SkillTitle,
  MoviesContent
 } from './styles';
-import { MoviesList } from '../../../components/MoviesList';
 
 
 export function SpiderMan() {
@@ -81,8 +81,8 @@ return (
          </SkillsContent>
 
          <MoviesContent>
-         <SkillTitle>Filmes</SkillTitle>
-           <MoviesList />
+              <SkillTitle>Filmes</SkillTitle>
+              <MoviesList movies={'https://res.cloudinary.com/didxdzbfe/image/upload/v1630639549/marvelstudios/movies/captain-america-3_ik0fsu.jpg'} />
          </MoviesContent>
 
       </DetailsContent>

@@ -114,4 +114,10 @@ export const SkillsContent = styled.View`
 
 `;
 
-export const MoviesContent = styled.View``;
+export const MoviesContent = styled.View`
+
+
+      width: 100%;
+     
+
+`;

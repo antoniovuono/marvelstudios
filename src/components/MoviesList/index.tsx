@@ -1,12 +1,23 @@
 import React from 'react';
 
 import {
- Container
+ Container,
+ BackgroundImage 
 } from './styles';
 
-export function MoviesList(){
+interface Props {
+  movies: string;
+}
+
+export function MoviesList({ movies }: Props){
 return (
   <Container> 
+
+    <BackgroundImage 
+
+      source={{ uri: movies}}
+      resizeMode="contain"
+    />
 
   </Container>
   );
