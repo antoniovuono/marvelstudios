@@ -33,6 +33,7 @@ export const NameContent = styled.View`
 
       padding: 20px;
 
+
 `;
 
 export const AlterEgo = styled.Text`
@@ -86,6 +87,23 @@ export const SecondParagrp = styled.Text`
    text-align: justify;
 
    margin-top: 20px;
+
+`;
+
+export const SkillTitle = styled.Text`
+
+   color: ${({theme}) => theme.colors.primary_background};
+   font-size: ${RFValue(18)}px;
+   font-family: 'gilroy-bold'; 
+
+   padding: 24px;
+
+`;
+
+
+export const SkillsContent = styled.View`
+
+   align-items: center;
 
 `;
 
