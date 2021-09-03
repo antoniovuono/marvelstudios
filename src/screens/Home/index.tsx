@@ -61,7 +61,6 @@ export function Home(){
       } finally {
         setIsLoading(false);
       }
-      
     }
 
     fetchHeros();

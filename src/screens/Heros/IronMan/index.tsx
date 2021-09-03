@@ -24,16 +24,17 @@ import {
 export function IronMan() {
 return (
   <>
-  <StatusBar
-    barStyle="light-content"
-    translucent 
-    backgroundColor="transparent"
-    />
+      <StatusBar
+        barStyle="light-content"
+        translucent 
+        backgroundColor="transparent"
+        />
 
 
-      <Container source={{ uri: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628877008/iron-man_cfxmw9.png' }}> 
+       <Container source={{ uri: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628877008/iron-man_cfxmw9.png' }}> 
 
-      <Header />
+       <Header />
+
 
     
 

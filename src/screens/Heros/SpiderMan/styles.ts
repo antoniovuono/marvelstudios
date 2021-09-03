@@ -27,3 +27,65 @@ export const ArrowIcon = styled(Feather)`
    font-size: ${RFValue(24)}px;
 `;
 
+export const DetailsContent = styled.ScrollView``;
+
+export const NameContent = styled.View`
+
+      padding: 20px;
+
+`;
+
+export const AlterEgo = styled.Text`
+
+   color: ${({theme}) => theme.colors.primary_background};
+   font-size: ${RFValue(16)}px;
+   font-family: 'gilroy-medium';
+
+`;
+
+export const Name = styled.Text`
+
+   color: ${({theme}) => theme.colors.primary_background};
+   font-size: ${RFValue(40)}px;  
+   font-family: 'gilroy-heavy';
+
+`;
+
+export const CaractContent = styled.View`
+
+   flex-direction: row;
+   justify-content: space-between;
+
+   padding: 20px;
+
+`;
+
+export const DescriptionContent = styled.View`
+
+   padding: 20px;
+
+`;
+
+export const FirstParagrph = styled.Text`
+
+   color: ${({theme}) => theme.colors.primary_background};
+   font-size: ${RFValue(14)}px;
+   font-family: 'gilroy-medium';
+
+   text-align: justify;
+
+
+`;
+
+export const SecondParagrp = styled.Text`
+
+   color: ${({theme}) => theme.colors.primary_background};
+   font-size: ${RFValue(14)}px;
+   font-family: 'gilroy-medium';
+
+   text-align: justify;
+
+   margin-top: 20px;
+
+`;
+
