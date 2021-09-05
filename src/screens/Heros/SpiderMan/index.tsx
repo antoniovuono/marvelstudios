@@ -1,5 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { StatusBar } from 'react-native';
+
+import { CharacterDTO } from '../../../dtos/CharacterDTO';
+import { api } from '../../../services/api';
+
 
 import { Header } from '../../../components/Header';
 import { MoviesList } from '../../../components/MoviesList';
@@ -24,11 +28,27 @@ import {
  SecondParagrp,
  SkillsContent,
  SkillTitle,
- MoviesContent
+ MoviesContent,
+ MoviesFlatList 
 } from './styles';
 
 
+
 export function SpiderMan() {
+ const [movies, setMovies] = useState<CharacterDTO[]>([]);
+
+useEffect(() => {
+
+  async function fetechMovies() {
+    const response = await api.get('/heroes');
+    setMovies(response.data);
+    console.log(response);
+  }
+
+  fetechMovies();
+
+}, []);
+
 return (
   <>
   <StatusBar
@@ -82,7 +102,11 @@ return (
 
          <MoviesContent>
               <SkillTitle>Filmes</SkillTitle>
-              <MoviesList movies={'https://res.cloudinary.com/didxdzbfe/image/upload/v1630639549/marvelstudios/movies/captain-america-3_ik0fsu.jpg'} />
+
+             
+              
+             
+
          </MoviesContent>
 
       </DetailsContent>

@@ -121,3 +121,5 @@ export const MoviesContent = styled.View`
      
 
 `;
+
+export const MoviesFlatList = styled.FlatList``;
