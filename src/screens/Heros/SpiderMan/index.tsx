@@ -29,25 +29,14 @@ import {
  SkillsContent,
  SkillTitle,
  MoviesContent,
- MoviesFlatList 
+ MoviesScrollList 
 } from './styles';
 
 
 
 export function SpiderMan() {
- const [movies, setMovies] = useState<CharacterDTO[]>([]);
 
-useEffect(() => {
 
-  async function fetechMovies() {
-    const response = await api.get('/heroes');
-    setMovies(response.data);
-    console.log(response);
-  }
-
-  fetechMovies();
-
-}, []);
 
 return (
   <>
@@ -102,10 +91,17 @@ return (
 
          <MoviesContent>
               <SkillTitle>Filmes</SkillTitle>
-
-             
-              
-             
+              <MoviesScrollList
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}
+              >
+                  <MoviesList movies={ "https://res.cloudinary.com/didxdzbfe/image/upload/v1630639549/marvelstudios/movies/captain-america-3_ik0fsu.jpg" } />
+                  <MoviesList movies={ "https://res.cloudinary.com/didxdzbfe/image/upload/v1630639486/marvelstudios/movies/spider-man-homecoming_ad0z4d.jpg" } />
+                  <MoviesList movies={ "https://res.cloudinary.com/didxdzbfe/image/upload/v1630639486/marvelstudios/movies/spider-man-homecoming_ad0z4d.jpg"} />
+                  <MoviesList movies={ "https://res.cloudinary.com/didxdzbfe/image/upload/v1630639486/marvelstudios/movies/spider-man-homecoming_ad0z4d.jpg" } />
+                  <MoviesList movies={ "https://res.cloudinary.com/didxdzbfe/image/upload/v1630639486/marvelstudios/movies/spider-man-homecoming_ad0z4d.jpg" } />
+            
+              </MoviesScrollList>
 
          </MoviesContent>
 

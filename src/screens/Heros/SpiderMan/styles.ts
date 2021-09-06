@@ -30,9 +30,10 @@ export const ArrowIcon = styled(Feather)`
 export const DetailsContent = styled.ScrollView`
 
    background-color: ${({theme}) => theme.colors.secondary_background};
-   opacity: 0.7;
 
-   margin-top: ${RFValue(210)}px;
+   margin-top: ${RFValue(245)}px;
+
+   opacity: 0.75;
 
 `;
 
@@ -122,4 +123,7 @@ export const MoviesContent = styled.View`
 
 `;
 
-export const MoviesFlatList = styled.FlatList``;
+export const  MoviesScrollList = styled.ScrollView`
+
+
+`;

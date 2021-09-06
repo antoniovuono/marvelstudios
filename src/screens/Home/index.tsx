@@ -1,6 +1,6 @@
 import React,{ useState, useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { StatusBar, ActivityIndicator } from 'react-native';
+import { StatusBar } from 'react-native';
 import { useTheme } from 'styled-components';
 import { Load } from '../../components/Load';
 
