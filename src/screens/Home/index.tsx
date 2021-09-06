@@ -2,6 +2,7 @@ import React,{ useState, useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar, ActivityIndicator } from 'react-native';
 import { useTheme } from 'styled-components';
+import { Load } from '../../components/Load';
 
 import { api } from '../../services/api';
 import { CharacterDTO } from '../../dtos/CharacterDTO';
@@ -26,7 +27,7 @@ import {
  TitleList,
  RaceCharacterList
 } from './styles';
-import { Load } from '../../components/Load';
+
 
 
 export function Home(){
