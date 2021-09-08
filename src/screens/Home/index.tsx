@@ -38,8 +38,8 @@ export function Home(){
   const navigation = useNavigation();
   const theme = useTheme();
 
-  function handleHerosScreen(hero: CharacterDTO) {
-    navigation.navigate("HerosDetails", hero);
+  function handleHerosDetails(hero: CharacterDTO) {
+    navigation.navigate("HerosDetails", {hero});
   }
 
   useEffect(() => {
@@ -49,6 +49,7 @@ export function Home(){
         const response = await api.get('/heroes');
         
         setHeros(response.data);
+        console.log(response.data);
       } catch (error) {
         console.log(error);
       } finally {
@@ -115,7 +116,7 @@ return (
 
                   data={heros}
                   keyExtractor={item => item.alterEgo}
-                  renderItem={({item }) => <CharsList onPress={() => handleHerosScreen(item)}  imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
+                  renderItem={({item }) => <CharsList onPress={() => handleHerosDetails(item)}  imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
 
                 />
                 

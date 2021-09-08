@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { StatusBar } from 'react-native';
+import { useRoute } from '@react-navigation/native';
 
 import { CharacterDTO } from '../../dtos/CharacterDTO';
-import { api } from '../../services/api';
-
 
 import { Header } from '../../components/Header';
 import { MoviesList } from '../../components/MoviesList';
@@ -32,11 +31,15 @@ import {
  MoviesScrollList 
 } from './styles';
 
+interface Params {
+  hero: CharacterDTO;
+}
 
 
 export function HerosDetails() {
 
-
+const route = useRoute();
+const { hero } = route.params as Params;
 
 return (
   <>
@@ -55,7 +58,7 @@ return (
 
         <NameContent>
             <AlterEgo>Peter Parker</AlterEgo>
-            <Name>Homem Aranha</Name>
+            <Name>Homem Aranhas</Name>
          </NameContent>
 
 
