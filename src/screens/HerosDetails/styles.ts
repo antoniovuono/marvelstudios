@@ -29,7 +29,7 @@ export const ArrowIcon = styled(Feather)`
 
 export const DetailsContent = styled.ScrollView`
 
-   background-color: ${({theme}) => theme.colors.secondary_background};
+   
 
    margin-top: ${RFValue(245)}px;
 
