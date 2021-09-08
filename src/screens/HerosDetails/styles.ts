@@ -29,7 +29,6 @@ export const ArrowIcon = styled(Feather)`
 
 export const DetailsContent = styled.ScrollView`
 
-   
 
    margin-top: ${RFValue(245)}px;
 
