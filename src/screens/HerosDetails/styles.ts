@@ -33,7 +33,6 @@ export const DetailsContent = styled.ScrollView`
 
    margin-top: ${RFValue(245)}px;
 
-   opacity: 0.75;
 
 `;
 
@@ -57,6 +56,8 @@ export const Name = styled.Text`
    color: ${({theme}) => theme.colors.primary_background};
    font-size: ${RFValue(40)}px;  
    font-family: 'gilroy-heavy';
+
+   margin-top: 10px;
 
 `;
 
