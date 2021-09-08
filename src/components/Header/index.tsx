@@ -10,10 +10,15 @@ import {
 
 export function Header(){
 const navigation = useNavigation();
+
+function handleGoBack() {
+  navigation.goBack();
+}
+
 return (
   <Container> 
     
-    <BackButton onPress={() => navigation.navigate('Home')}>
+    <BackButton onPress={handleGoBack}>
     <ArrowIcon name="arrow-left" />
     </BackButton>
 

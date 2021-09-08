@@ -33,10 +33,14 @@ import {
 export function Home(){
   const[ isLoading, setIsLoading ] = useState(true);
   const [ heros, setHeros ] = useState<CharacterDTO[]>([]);
-  const [ villains, setVillains ] = useState<CharacterDTO[]>([]);
+
 
   const navigation = useNavigation();
   const theme = useTheme();
+
+  function handleHerosScreen(hero: CharacterDTO) {
+    navigation.navigate("HerosDetails", hero);
+  }
 
   useEffect(() => {
 
@@ -52,20 +56,9 @@ export function Home(){
       }
     }
 
-    async function fetchVillains() {
-      try {
-        const response = await api.get('/villains');
-
-        setVillains(response.data)
-      } catch (error) {
-        console.log(error);
-      } finally {
-        setIsLoading(false);
-      }
-    }
 
     fetchHeros();
-    fetchVillains();
+
     
   }, []);
 
@@ -122,18 +115,11 @@ return (
 
                   data={heros}
                   keyExtractor={item => item.alterEgo}
-                  renderItem={({item }) => <CharsList onPress={() => navigation.navigate(item.route)}  imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
+                  renderItem={({item }) => <CharsList onPress={() => handleHerosScreen(item)}  imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
 
                 />
                 
-            <TitleList>Vilões</TitleList>
-                <RaceCharacterList 
 
-                  data={villains}
-                  keyExtractor={item => item.alterEgo}
-                  renderItem={({item}) => <CharsList onPress={() => navigation.navigate(item.route)} imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
-                
-                />
                
 
 

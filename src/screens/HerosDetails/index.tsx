@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { StatusBar } from 'react-native';
 
-import { CharacterDTO } from '../../../dtos/CharacterDTO';
-import { api } from '../../../services/api';
+import { CharacterDTO } from '../../dtos/CharacterDTO';
+import { api } from '../../services/api';
 
 
-import { Header } from '../../../components/Header';
-import { MoviesList } from '../../../components/MoviesList';
+import { Header } from '../../components/Header';
+import { MoviesList } from '../../components/MoviesList';
 
-import AgeSvg from '../../../assets/icons/age.svg';
-import WeightSvg from '../../../assets/icons/weight.svg';
-import HeightSvg from '../../../assets/icons/height.svg';
-import UniverseSvg from '../../../assets/icons/universe.svg';
+import AgeSvg from '../../assets/icons/age.svg';
+import WeightSvg from '../../assets/icons/weight.svg';
+import HeightSvg from '../../assets/icons/height.svg';
+import UniverseSvg from '../../assets/icons/universe.svg';
 
-import SkillsBars from '../../../assets/images/abilitiesspider.svg';
+import SkillsBars from '../../assets/images/abilitiesspider.svg';
 
 
 import {
@@ -34,7 +34,7 @@ import {
 
 
 
-export function SpiderMan() {
+export function HerosDetails() {
 
 
 
