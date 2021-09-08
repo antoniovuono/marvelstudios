@@ -24,11 +24,12 @@ import {
  CaractContent,
  DescriptionContent,
  FirstParagrph,
- SecondParagrp,
  SkillsContent,
  SkillTitle,
  MoviesContent,
- MoviesScrollList 
+ MoviesScrollList,
+ CaractDetailsContent,
+ CaractText
 } from './styles';
 
 interface Params {
@@ -50,41 +51,44 @@ return (
     />
 
 
-      <Container source={{ uri: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628876294/marvelstudios/characters/spider-man_s79dx6.png' }}> 
+      <Container source={{ uri: hero.imagePath }}> 
 
       <Header />
 
       <DetailsContent>
 
         <NameContent>
-            <AlterEgo>Peter Parker</AlterEgo>
-            <Name>Homem Aranhas</Name>
+            <AlterEgo>{hero.alterEgo}</AlterEgo>
+            <Name>{hero.name}</Name>
          </NameContent>
 
-
          <CaractContent>
-           <AgeSvg />
+           <CaractDetailsContent> 
+           <AgeSvg  />
+           <CaractText>{hero.caracteristics.birth}</CaractText>
+           </CaractDetailsContent>
+
+           <CaractDetailsContent> 
            <WeightSvg />
+           <CaractText>{hero.caracteristics.weight.value}kg</CaractText>
+           </CaractDetailsContent>
+
+           <CaractDetailsContent> 
            <HeightSvg />
+           <CaractText>{hero.caracteristics.height.value}m</CaractText>
+           </CaractDetailsContent>
+
+           <CaractDetailsContent> 
            <UniverseSvg />
+           <CaractText>{hero.caracteristics.universe}</CaractText>
+           </CaractDetailsContent>
          </CaractContent>
 
 
          <DescriptionContent>
-           <FirstParagrph>
-           Em Forest Hills, Queens, Nova York, o estudante de ensino médio, Peter Parker, 
-           é um cientista orfão que vive com seu tio Ben e tia May. Ele é mordido por uma 
-           aranha radioativa em uma exposição científica e adquire a agilidade e a força
-            proporcional de um aracnídeo. Junto com a super força, Parker ganha a capacidade
-             de andar nas paredes e tetos.
-           </FirstParagrph>
+           <FirstParagrph>{hero.biography}</FirstParagrph>
 
-           <SecondParagrp>
-           Através de sua habilidade nativa para a ciência, ele desenvolve um aparelho que o 
-           permitir lançar teias artificiais. Inicialmente buscando capitalizar suas novas 
-           habilidades, Parker cria um traje e, como Homem Aranha, torna-se uma estrela 
-           de televisão.
-           </SecondParagrp>
+          
          </DescriptionContent>
 
          <SkillTitle>Habilidades</SkillTitle>

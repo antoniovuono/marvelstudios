@@ -65,7 +65,26 @@ export const CaractContent = styled.View`
    flex-direction: row;
    justify-content: space-between;
 
+   align-items: center;
+
    padding: 20px;
+
+`;
+
+export const CaractDetailsContent = styled.View`
+
+   align-items: center;
+   justify-content: center;
+
+`;
+
+export const CaractText = styled.Text`
+
+   font-family: 'gilroy-medium';
+   font-size: ${RFValue(12)}px;
+   color: ${({theme}) => theme.colors.primary_background};
+
+   margin-top: 15px;
 
 `;
 
