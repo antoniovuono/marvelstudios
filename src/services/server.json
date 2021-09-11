@@ -200,7 +200,7 @@
 		{
 			"name": "Deadpool",
 			"alterEgo": "Wade Wilson",
-			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628952730/deadpool_ztff4a.png",
+			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628952730/marvelstudios/characters/deadpool_ztff4a.png",
 			"biography": "O jovem Wade saiu do controle quando sua mãe morreu de câncer quando ele tinha 6 anos de idade, tornando-o um garoto solitário e atormentado, sem nenhuma explicação. Seu pai – que era um bêbado do exército – o espancava e o tratava mal. Assim, com uma vida desestruturada, Wade tornou-se um delinquente na adolescência. Um dia chegou a agredir friamente seu pai com uma garrafa mostrando alguns traços de insanidade, matando-o no processo. Depois disso, Wade iniciou sua carreira de mercenário. Ele aceitava assassinar apenas aqueles merecedores da morte.",
 			"caracteristics": {
 				"birth": "1991",
@@ -222,14 +222,14 @@
 				"velocity": 70
 			},
 			"movies": [
-				"./movies/deadpool-1.jpg",
-				"./movies/deadpool-2.jpg"
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631398962/marvelstudios/movies/deadpool-1_ehb0xs.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631398962/marvelstudios/movies/deadpool-2_tautnd.jpg"
 			]
 		},
 		{
 			"name": "Venom",
 			"alterEgo": "Eddie Brock",
-			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628952738/venom_zp6aik.png",
+			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628952738/marvelstudios/characters/venom_zp6aik.png",
 			"biography": "Venom é o ser resultante da simbiose entre uma criatura alienígena e o jornalista Eddie Brock. Apesar de já ter tido minisséries próprias, a maioria de suas aparições é como inimigo do personagem Homem Aranha. A característica marcante de Venom, além do uniforme negro, é a desproporcional e assustadora mandíbula. Antes de fundir-se ao simbionte e tornar-se o Venom, Eddie Brock era um repórter do jornal Clarim Diário. A origem do simbionte alienígena foi mostrada no evento intitulado Guerras Secretas, quando foi usado como 'uniforme' pelo próprio Homem Aranha.",
 			"caracteristics": {
 				"birth": "1986",
@@ -251,13 +251,13 @@
 				"velocity": 75
 			},
 			"movies": [
-				"./movies/venom.jpg"
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631398998/marvelstudios/movies/venom_vyilcc.jpg"
 			]
 		},
 		{
 			"name": "Justiceiro",
 			"alterEgo": "Francis Castle",
-			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628952758/punisher_aoqqvz.png",
+			"imagePath": "https://res.cloudinary.com/didxdzbfe/image/upload/v1628952758/marvelstudios/characters/punisher_aoqqvz.png",
 			"biography": "O Justiceiro é um vigilante, que considera crimes como assassinato, sequestro e tortura aceitáveis como táticas de combate ao crime. Motivado pela morte de sua família, que foi morta pelos capangas do mafioso Costa, quando testemunharam uma execução proveniente de uma guerra entre gangues no Central Park, em Nova York. O Justiceiro pode ser considerado um homem-guerra entre todos os criminosos em geral, conhecendo quase todo o tipo de armamento. Como veterano de guerra, Castle é um mestre em táticas furtivas e emboscadas, bem como o manuseio de várias armas.",
 			"caracteristics": {
 				"birth": "1974",
@@ -279,7 +279,7 @@
 				"velocity": 65
 			},
 			"movies": [
-				"./movies/punisher.jpg"
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631399030/marvelstudios/movies/punisher_fktj6w.jpg"
 			]
 		}
 	],
@@ -309,9 +309,9 @@
 				"velocity": 80
 			},
 			"movies": [
-				"./movies/guardians-of-the-galaxy-1.jpg",
-				"./movies/avengers-3.jpg",
-				"./movies/avengers-4.jpg"
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631399059/marvelstudios/movies/guardians-of-the-galaxy-1_l6xjp2.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639510/marvelstudios/movies/avengers-3_rbxwcf.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639512/marvelstudios/movies/avengers-4_s48wah.jpg"
 			]
 		},
 		{
@@ -339,8 +339,8 @@
 				"velocity": 75
 			},
 			"movies": [
-				"./movies/captain-marvel.jpg",
-				"./movies/guardians-of-the-galaxy-1.jpg"
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631399122/marvelstudios/movies/captain-marvel_tncupi.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631399059/marvelstudios/movies/guardians-of-the-galaxy-1_l6xjp2.jpg"
 			]
 		},
 		{
@@ -368,7 +368,7 @@
 				"velocity": 80
 			},
 			"movies": [
-				"./movies/captain-marvel.jpg"
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631399122/marvelstudios/movies/captain-marvel_tncupi.jpg"
 			]
 		}
 	],
