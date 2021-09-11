@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import { Feather } from '@expo/vector-icons';
-import {  getStatusBarHeight } from 'react-native-iphone-x-helper';
+import {  getBottomSpace, getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.ImageBackground`
@@ -144,5 +144,6 @@ export const MoviesContent = styled.View`
 
 export const  MoviesScrollList = styled.ScrollView`
 
+   margin-bottom: ${getBottomSpace() + 5}px;
 
 `;

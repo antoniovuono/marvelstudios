@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { StatusBar } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 
@@ -32,6 +32,7 @@ import {
  CaractText
 } from './styles';
 
+
 interface Params {
   hero: CharacterDTO;
 }
@@ -40,7 +41,16 @@ interface Params {
 export function HerosDetails() {
 
 const route = useRoute();
+const [movies, setMovies] = useState<Params[]>([]);
 const { hero } = route.params as Params;
+
+useEffect(() => {
+
+ 
+ 
+  
+
+}, [])
 
 return (
   <>
@@ -98,18 +108,19 @@ return (
 
          <MoviesContent>
               <SkillTitle>Filmes</SkillTitle>
-              <MoviesScrollList
-              horizontal={true}
-              showsHorizontalScrollIndicator={false}
-              >
-                  <MoviesList movies={ "https://res.cloudinary.com/didxdzbfe/image/upload/v1630639549/marvelstudios/movies/captain-america-3_ik0fsu.jpg" } />
-                  <MoviesList movies={ "https://res.cloudinary.com/didxdzbfe/image/upload/v1630639486/marvelstudios/movies/spider-man-homecoming_ad0z4d.jpg" } />
-                  <MoviesList movies={ "https://res.cloudinary.com/didxdzbfe/image/upload/v1630639486/marvelstudios/movies/spider-man-homecoming_ad0z4d.jpg"} />
-                  <MoviesList movies={ "https://res.cloudinary.com/didxdzbfe/image/upload/v1630639486/marvelstudios/movies/spider-man-homecoming_ad0z4d.jpg" } />
-                  <MoviesList movies={ "https://res.cloudinary.com/didxdzbfe/image/upload/v1630639486/marvelstudios/movies/spider-man-homecoming_ad0z4d.jpg" } />
             
-              </MoviesScrollList>
+            <MoviesScrollList
+              horizontal={true}
+            >
 
+                  {
+                    hero.movies.map(movies => (
+                      <MoviesList movies={movies} />
+                    ))
+                  }
+
+            </MoviesScrollList>
+              
          </MoviesContent>
 
       </DetailsContent>

@@ -14,7 +14,6 @@ return (
   <Container> 
 
     <BackgroundImage 
-
       source={{ uri: movies}}
       resizeMode="contain"
     />
