@@ -41,16 +41,7 @@ interface Params {
 export function HerosDetails() {
 
 const route = useRoute();
-const [movies, setMovies] = useState<Params[]>([]);
 const { hero } = route.params as Params;
-
-useEffect(() => {
-
- 
- 
-  
-
-}, [])
 
 return (
   <>
@@ -109,7 +100,6 @@ return (
          <MoviesContent>
               <SkillTitle>Filmes</SkillTitle>
 
-                
                <MoviesScrollList
                    horizontal={true}
                    showsHorizontalScrollIndicator={false}

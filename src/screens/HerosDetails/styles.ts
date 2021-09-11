@@ -8,7 +8,6 @@ import { ScrollView } from 'react-native-gesture-handler';
 export const Container = styled.ImageBackground`
    flex: 1;
 
-
 `;
 
 export const Header = styled.View`

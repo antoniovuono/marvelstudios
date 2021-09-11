@@ -131,8 +131,9 @@
 				"velocity": 80
 			},
 			"movies": [
-				"./movies/captain-america-1.jpg",
-				"./movies/avengers-4.jpg"
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631397801/marvelstudios/movies/captain-america-1_ak1jy4.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639510/marvelstudios/movies/avengers-3_rbxwcf.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639512/marvelstudios/movies/avengers-4_s48wah.jpg"
 			]
 		},
 		{
@@ -161,8 +162,8 @@
 				"velocity": 70
 			},
 			"movies": [
-				"./movies/fantastic-four-1.jpg",
-				"./movies/fantastic-four-2.jpg"
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631397881/marvelstudios/movies/fantastic-four-1_zyefis.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631397882/marvelstudios/movies/fantastic-four-2_jrhqgr.jpg"
 			]
 		},
 		{
@@ -191,7 +192,7 @@
 				"velocity": 65
 			},
 			"movies": [
-				"./movies/spider-man-1.jpg"
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631397914/marvelstudios/movies/spider-man-1_eaxgob.jpg"
 			]
 		}
 	],
