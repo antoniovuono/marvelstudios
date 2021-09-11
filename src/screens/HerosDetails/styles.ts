@@ -4,7 +4,6 @@ import {  getBottomSpace, getStatusBarHeight } from 'react-native-iphone-x-helpe
 import { RFValue } from 'react-native-responsive-fontsize';
 import { ScrollView } from 'react-native-gesture-handler';
 
-import { LinearGradient } from 'expo-linear-gradient';
 
 export const Container = styled.ImageBackground`
    flex: 1;
@@ -30,7 +29,7 @@ export const ArrowIcon = styled(Feather)`
    font-size: ${RFValue(24)}px;
 `;
 
-export const DetailsContent = styled.ScrollView<LinearGradient>`
+export const DetailsContent = styled.ScrollView`
 
 
    margin-top: ${RFValue(245)}px;
