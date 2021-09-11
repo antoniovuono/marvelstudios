@@ -5,6 +5,8 @@ DevChallange e foi desenvolvido para treinar conceitos de desenvolvimento mobile
 <h3>Design:</h3>
 <link> https://www.figma.com/file/GJn79h04gw3wQrgl8bqDUQ/Marvel-Heroes-Community?node-id=2088%3A1821 </link>
 
+<img width="784" alt="IMG" src="https://user-images.githubusercontent.com/7297243/132963594-3e211e20-8068-4188-986f-73e8b27b69a2.png">
+
 
 <h2>TECNOLOGIAS UTILIZADAS:</h2>
 <ul>
