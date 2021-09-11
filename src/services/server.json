@@ -59,10 +59,10 @@
 				"velocity": 80
 			},
 			"movies": [
-				"./movies/captain-america-3.jpg",
-				"./movies/black-panther.jpg",
-				"./movies/avengers-3.jpg",
-				"./movies/avengers-4.jpg"
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639549/marvelstudios/movies/captain-america-3_ik0fsu.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631397205/marvelstudios/movies/black-panther_ioat1v.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639510/marvelstudios/movies/avengers-3_rbxwcf.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639512/marvelstudios/movies/avengers-4_s48wah.jpg"
 			]
 		},
 		{
@@ -91,16 +91,16 @@
 				"velocity": 80
 			},
 			"movies": [
-				"./movies/iron-man-1.jpg",
-				"./movies/iron-man-2.jpg",
-				"./movies/hulk.jpg",
-				"./movies/avengers-1.jpg",
-				"./movies/iron-man-3.jpg",
-				"./movies/avengers-2.jpg",
-				"./movies/captain-america-3.jpg",
-				"./movies/spider-man-homecoming.jpg",
-				"./movies/avengers-3.jpg",
-				"./movies/avengers-4.jpg"
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631397296/marvelstudios/movies/iron-man-1_v2lmih.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631397315/marvelstudios/movies/iron-man-2_bp1hvz.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631397357/marvelstudios/movies/hulk_nafyah.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631397398/marvelstudios/movies/avengers-1_cpo3ou.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631397325/marvelstudios/movies/iron-man-3_x88qjo.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1631397430/marvelstudios/movies/avengers-2_dzmpqb.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639549/marvelstudios/movies/captain-america-3_ik0fsu.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639486/marvelstudios/movies/spider-man-homecoming_ad0z4d.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639510/marvelstudios/movies/avengers-3_rbxwcf.jpg",
+				"https://res.cloudinary.com/didxdzbfe/image/upload/v1630639512/marvelstudios/movies/avengers-4_s48wah.jpg"
 			]
 		}
 	],
