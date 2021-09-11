@@ -108,14 +108,19 @@ return (
 
          <MoviesContent>
               <SkillTitle>Filmes</SkillTitle>
-            
-            <MoviesScrollList
-              horizontal={true}
-            >
+
+                
+               <MoviesScrollList
+                   horizontal={true}
+                   showsHorizontalScrollIndicator={false}
+               >
 
                   {
                     hero.movies.map(movies => (
-                      <MoviesList movies={movies} />
+                        <MoviesList
+                              key={movies}
+                              movies={movies} 
+                        />
                     ))
                   }
 

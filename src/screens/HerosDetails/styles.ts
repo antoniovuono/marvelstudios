@@ -2,6 +2,7 @@ import styled from 'styled-components/native';
 import { Feather } from '@expo/vector-icons';
 import {  getBottomSpace, getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { RFValue } from 'react-native-responsive-fontsize';
+import { ScrollView } from 'react-native-gesture-handler';
 
 export const Container = styled.ImageBackground`
    flex: 1;
@@ -142,8 +143,10 @@ export const MoviesContent = styled.View`
 
 `;
 
-export const  MoviesScrollList = styled.ScrollView`
-
+export const  MoviesScrollList = styled(ScrollView).attrs({
+   horizontal: true,
+   showsHorizontalScrollIndicator: false
+})`
    margin-bottom: ${getBottomSpace() + 5}px;
 
 `;
