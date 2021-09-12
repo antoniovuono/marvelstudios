@@ -36,6 +36,7 @@ export function Home(){
   const [ villains, setVillains ] = useState<CharacterDTO[]>([]);
   const [ antiHeros, setAntiHeros ] = useState<CharacterDTO[]>([]);
   const [ alliens, setAlliens ] = useState<CharacterDTO[]>([]);
+  const [ humans, setHumans ] = useState<CharacterDTO[]>([]);
 
 
   const navigation = useNavigation();
@@ -53,13 +54,14 @@ export function Home(){
         const responseVillains = await api.get('/villains');
         const responseAntiHeros = await api.get('/antiHeroes');
         const responseAlliens = await api.get('/aliens');
+        const responseHumans = await api.get('/humans');
         
         
         setHeros(responseHeros.data);
         setVillains(responseVillains.data);
         setAntiHeros(responseAntiHeros.data);
         setAlliens(responseAlliens.data);
-       
+        setHumans(responseHumans.data);
 
 
       } catch (error) {
@@ -159,11 +161,16 @@ return (
 
                 />
 
-             <TitleList>Humanos</TitleList>
-            
+             <TitleList>Humanos</TitleList>  
                 
+                <RaceCharacterList 
+                    
+                    data={humans}
+                    keyExtractor={ item => item.alterEgo}
+                    renderItem={({ item }) => <CharsList onPress={() => handleHerosDetails(item)} imagePath={item.imagePath} alterEgo={item.alterEgo} name={item.name} />}
 
-               
+                  />
+                  
 
 
       </PrimaryList>
