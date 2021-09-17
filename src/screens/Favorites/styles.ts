@@ -35,6 +35,7 @@ export const Title = styled.Text`
 
 `;
 
+export const GoBackButton = styled.TouchableOpacity``;
 
 export const IconGoBack = styled(Feather)``;
 
