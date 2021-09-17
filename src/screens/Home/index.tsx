@@ -90,7 +90,7 @@ return (
       <HeaderContent>
 
         <ButtonIconList onPress={() => {}}>
-        <IconList name="list" />
+        <IconList name="favorite" />
         </ButtonIconList>
 
         <Logotipo />

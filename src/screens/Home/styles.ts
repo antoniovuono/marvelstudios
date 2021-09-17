@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import { FlatList } from "react-native";
-import { Feather } from '@expo/vector-icons';
+import { MaterialIcons, Feather } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { Platform } from "react-native";
 
@@ -30,7 +30,7 @@ export const HeaderContent = styled.View`
      
 `;
 
-export const IconList = styled(Feather)`
+export const IconList = styled(MaterialIcons)`
 
    color: ${({theme}) => theme.colors.dark};
    font-size: ${RFValue(24)}px;

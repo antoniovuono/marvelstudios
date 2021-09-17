@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import { StatusBar } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 
@@ -31,6 +31,7 @@ import {
  CaractDetailsContent,
  CaractText
 } from './styles';
+import { Load } from '../../components/Load';
 
 
 interface Params {
@@ -42,6 +43,7 @@ export function HerosDetails() {
 
 const route = useRoute();
 const { hero } = route.params as Params;
+
 
 return (
   <>
@@ -122,6 +124,8 @@ return (
 
            
       </Container>
+
+                
   </>
   );
 }
