@@ -3,6 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import { Home  } from '../screens/Home';
 import { HerosDetails } from "../screens/HerosDetails";
+import { Favorites } from "../screens/Favorites";
 
 const { Navigator, Screen} = createStackNavigator();
 
@@ -20,6 +21,11 @@ return (
           <Screen 
             name="HerosDetails"
             component={HerosDetails}
+          />
+
+          <Screen 
+            name="Favorites"
+            component={Favorites}   
           />
 
 

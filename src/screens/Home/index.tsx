@@ -46,6 +46,10 @@ export function Home(){
     navigation.navigate("HerosDetails", {hero});
   }
 
+  function handleFavorites() {
+    navigation.navigate("Favorites");
+  }
+
   useEffect(() => {
 
     async function fetchHeros() {
@@ -89,7 +93,7 @@ return (
     <Header>
       <HeaderContent>
 
-        <ButtonIconList onPress={() => {}}>
+        <ButtonIconList onPress={handleFavorites}>
         <IconList name="favorite" />
         </ButtonIconList>
 
