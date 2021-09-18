@@ -32,6 +32,7 @@ import {
  CaractText
 } from './styles';
 import { Load } from '../../components/Load';
+import { Button } from '../../components/Button';
 
 
 interface Params {
@@ -120,9 +121,9 @@ return (
               
          </MoviesContent>
 
-      </DetailsContent>
+         <Button />
 
-           
+      </DetailsContent>
       </Container>
 
                 
