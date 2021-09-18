@@ -13,10 +13,34 @@ import {
  AlterEgo,
  InfosContent,
  CaractContnet,
- Description,
+ Age,
+ Weight,
+ Height,
+ Universe,
 } from './styles';
 
-export function FavoriteCard(){
+interface FavoritesProps {
+  imagePath: string;
+  name: string;
+  alterEgo: string;
+  age: string;
+  weight: string;
+  height: string;
+  universe: string;
+  onPress: () => void;
+}
+
+export function FavoriteCard({ 
+  imagePath,
+  name,
+  alterEgo,
+  age,
+  weight,
+  height,
+  universe,
+  onPress,
+  ...rest
+ }: FavoritesProps){
 return (
   <Container> 
 
@@ -24,7 +48,7 @@ return (
 
         <ContentImage>
           <ImageCharacter 
-          source={{ uri: 'https://res.cloudinary.com/didxdzbfe/image/upload/v1628877008/marvelstudios/characters/iron-man_cfxmw9.png' }} 
+          source={{uri: imagePath} }
           
           />
         </ContentImage>
@@ -37,29 +61,29 @@ return (
 
             <CaractContnet>
               <FontAwesome name="birthday-cake" size={20} color="black" />
-              <Description>1970</Description>
+              <Age>1970</Age>
             </CaractContnet>
 
             <CaractContnet>
               <FontAwesome5 name="weight" size={20} color="black" />
-              <Description>78kg</Description>
+              <Weight>78kg</Weight>
             </CaractContnet>
 
             <CaractContnet>
               <MaterialIcons name="height" size={20} color="black" />
-              <Description>1.80m</Description>
+              <Height>1.80m</Height>
             </CaractContnet>
 
             <CaractContnet>
              <Ionicons name="earth" size={20} color="black" />   
-              <Description>Terra</Description>
+              <Universe>Terra</Universe>
             </CaractContnet>
 
           </InfosContent>
 
         </DetailsContent>
 
-        <IconContent>
+        <IconContent onPress={onPress} {...rest}>
           <IconFavorite 
              name="trash" 
              size={30} 

@@ -78,15 +78,51 @@ export const CaractContnet = styled.View`
 
 `;
 
-export const Description = styled.Text`
+
+export const Age = styled.Text`
+
 
    font-family: 'gilroy-regular';
    font-size: ${RFValue(10)}px;
    margin-top: 5px;
 
-     color: ${({ theme }) => theme.colors.secondary_background};
+   color: ${({ theme }) => theme.colors.secondary_background};
 
 `;
+
+export const Weight = styled.Text`
+
+
+
+   font-family: 'gilroy-regular';
+   font-size: ${RFValue(10)}px;
+   margin-top: 5px;
+
+   color: ${({ theme }) => theme.colors.secondary_background};
+
+`;
+
+export const Height = styled.Text`
+
+   font-family: 'gilroy-regular';
+   font-size: ${RFValue(10)}px;
+   margin-top: 5px;
+
+   color: ${({ theme }) => theme.colors.secondary_background};
+
+
+`;
+
+export const Universe = styled.Text`
+
+   font-family: 'gilroy-regular';
+   font-size: ${RFValue(10)}px;
+   margin-top: 5px;
+
+   color: ${({ theme }) => theme.colors.secondary_background};
+
+`;
+
 
 
 

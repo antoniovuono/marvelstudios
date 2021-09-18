@@ -44,7 +44,16 @@ return (
     </Header>
 
     <FavoritesContent>
-      <FavoriteCard />
+      <FavoriteCard 
+          imagePath={'https://res.cloudinary.com/didxdzbfe/image/upload/v1628877008/marvelstudios/characters/iron-man_cfxmw9.png'}
+          name="Homem de Ferro"
+          alterEgo="Tony Stark"
+          age="1970"
+          weight="85kg"
+          height="1.80"
+          universe="Terra"
+          onPress={() => {}}
+      />
     </FavoritesContent>
 
   </Container>
