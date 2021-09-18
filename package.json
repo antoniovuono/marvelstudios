@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@": "react-navigation/stack",
+    "@react-native-async-storage/async-storage": "~1.15.0",
     "@react-navigation/native": "5",
     "@react-navigation/native-stack": "5",
     "@react-navigation/stack": "5",
