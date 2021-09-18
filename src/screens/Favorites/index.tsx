@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 
+import { FavoriteCard } from '../../components/FavoriteCard';
+
 import {
  Container,
  Header,
@@ -9,6 +11,7 @@ import {
  GoBackButton,
  IconGoBack,
  FavoriteIcon,
+ FavoritesContent
 } from './styles';
 
 export function Favorites(){
@@ -39,6 +42,10 @@ return (
              />
       </Content>
     </Header>
+
+    <FavoritesContent>
+      <FavoriteCard />
+    </FavoritesContent>
 
   </Container>
   );

@@ -32,8 +32,9 @@ export const HeaderContent = styled.View`
 
 export const IconList = styled(MaterialIcons)`
 
-   color: ${({theme}) => theme.colors.dark};
+  
    font-size: ${RFValue(24)}px;
+   color: ${({ theme }) => theme.colors.primary_title};
 
 `;
 

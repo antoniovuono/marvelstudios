@@ -1,6 +1,7 @@
 import styled from 'styled-components/native';
 import { Feather, MaterialIcons } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
+import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
 export const Container = styled.View`
       flex: 1;
@@ -10,9 +11,11 @@ export const Container = styled.View`
 export const Header = styled.View`
 
    width: 100%;
-   height: 200px;
+   height: 120px;
 
    justify-content: center;
+
+   margin-top: ${getStatusBarHeight() + 4}px;
 
 `;
 
@@ -42,6 +45,13 @@ export const IconGoBack = styled(Feather)``;
 
 export const FavoriteIcon = styled(MaterialIcons)`
 
- 
+   color: ${({ theme }) => theme.colors.primary_title};
+
+`;
+
+export const FavoritesContent = styled.View`
+
+   width: 100%;
+   padding: 0 24px;
 
 `;
