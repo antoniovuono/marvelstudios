@@ -7,8 +7,6 @@ import {
  ContentImage,
  ImageCharacter,
  DetailsContent,
- IconContent,
- IconFavorite,
  Name,
  AlterEgo,
  InfosContent,
@@ -49,46 +47,42 @@ return (
         <ContentImage>
           <ImageCharacter 
           source={{uri: imagePath} }
+          resizeMode="stretch"
           
           />
         </ContentImage>
 
         <DetailsContent>
-          <Name>Homem de Ferro</Name>
-          <AlterEgo>Tony Stark</AlterEgo>
+          <Name>{name}</Name>
+          <AlterEgo>{alterEgo}</AlterEgo>
 
           <InfosContent>
 
             <CaractContnet>
               <FontAwesome name="birthday-cake" size={20} color="black" />
-              <Age>1970</Age>
+              <Age>{age}</Age>
             </CaractContnet>
 
             <CaractContnet>
               <FontAwesome5 name="weight" size={20} color="black" />
-              <Weight>78kg</Weight>
+              <Weight>{weight}kg</Weight>
             </CaractContnet>
 
             <CaractContnet>
               <MaterialIcons name="height" size={20} color="black" />
-              <Height>1.80m</Height>
+              <Height>{height}m</Height>
             </CaractContnet>
 
             <CaractContnet>
              <Ionicons name="earth" size={20} color="black" />   
-              <Universe>Terra</Universe>
+              <Universe>{universe}</Universe>
             </CaractContnet>
 
           </InfosContent>
 
         </DetailsContent>
 
-        <IconContent onPress={onPress} {...rest}>
-          <IconFavorite 
-             name="trash" 
-             size={30} 
-          />
-        </IconContent>
+      
 
     </Content>
 

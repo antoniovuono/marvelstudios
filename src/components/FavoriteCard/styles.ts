@@ -10,6 +10,8 @@ export const Container = styled.View`
    border: 1px solid ${({ theme }) => theme.colors.secondary_background};
 
    border-radius: 20px;
+
+   margin-top: 10px;
 `;
 
 export const Content = styled.View`
@@ -20,9 +22,8 @@ export const Content = styled.View`
 
 export const ContentImage = styled.View`
 
-   width: 30%;
+   width: 35%;
    height: 100%;
-
 
 `;
 
@@ -39,7 +40,7 @@ export const ImageCharacter = styled.Image`
 export const DetailsContent = styled.View`
 
    padding: 10px;
-
+  
 `;
 
 export const Name = styled.Text`
@@ -124,21 +125,5 @@ export const Universe = styled.Text`
 `;
 
 
-
-
-export const IconContent = styled.TouchableOpacity`
-
-   align-items: center;
-   justify-content: center;
-
-   padding: 24px;
-
-`;
-
-export const IconFavorite = styled(FontAwesome)`
-
-   color: ${({ theme }) => theme.colors.primary_title};
-
-`;
 
 

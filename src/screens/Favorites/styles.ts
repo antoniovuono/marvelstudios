@@ -50,7 +50,7 @@ export const FavoriteIcon = styled(MaterialIcons)`
 `;
 
 export const FavoritesContent = styled.View`
-
+   flex: 1;
    width: 100%;
    padding: 0 24px;
 
