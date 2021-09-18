@@ -101,7 +101,7 @@ export const IconContent = styled.TouchableOpacity`
 
 export const IconFavorite = styled(FontAwesome)`
 
-   color: ${({ theme }) => theme.colors.secondary_background};
+   color: ${({ theme }) => theme.colors.primary_title};
 
 `;
 

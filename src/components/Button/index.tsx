@@ -6,11 +6,16 @@ import {
  Title
 } from './styles';
 
-export function Button(){
+interface ButtonProps {
+    title: string;
+    onPress: () => void;
+}
+
+export function Button({ title, onPress, ...rest }: ButtonProps){
 return (
   <Container>
-      <ButtonAddFavorites>
-      <Title>Favoritar</Title>
+      <ButtonAddFavorites onPress={onPress} {...rest}>
+      <Title>{title}</Title>
       </ButtonAddFavorites>
   </Container>
   );

@@ -121,7 +121,7 @@ return (
               
          </MoviesContent>
 
-         <Button />
+         <Button title="Favoritar" onPress={() => {}} />
 
       </DetailsContent>
       </Container>
