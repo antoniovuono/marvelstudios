@@ -16,10 +16,12 @@ import {
  FavoritesContent,
  Description
 } from './styles';
+import { Load } from '../../components/Load';
 
 
 export function Favorites(){
 const [favorites, setFavorites] = useState<CharacterDTO[]>([]);
+const [ loading, setLoading ] = useState(true);
 const navigation = useNavigation();
 
 function handleGoBack() {
@@ -32,6 +34,7 @@ async function loadFavorites() {
     const favorites = storagedItems ? JSON.parse(storagedItems) : [];
     
     setFavorites(favorites);
+    setLoading(false);
 }
 
 useEffect(() => {
@@ -62,23 +65,26 @@ return (
 
     <FavoritesContent>
       <Description> Você tem {favorites.length} personagens favoritados </Description>
-        <FlatList 
-          data={favorites}
-          keyExtractor={ item => item.name}
-          renderItem={ ({item}) => (
-                   <FavoriteCard 
-                      imagePath={item.imagePath}
-                      name={item.name}
-                      alterEgo={item.alterEgo}
-                      age={item.caracteristics.birth}
-                      weight={item.caracteristics.weight.value}
-                      height={item.caracteristics.height.value}
-                      universe={item.caracteristics.universe}
-                      onPress={() => {}}
-                  />
-          )}
-        
-        />
+      { loading ? <Load /> :
+            <FlatList 
+              data={favorites}
+              keyExtractor={ item => item.name}
+              renderItem={ ({item}) => (
+                      <FavoriteCard 
+                          imagePath={item.imagePath}
+                          name={item.name}
+                          alterEgo={item.alterEgo}
+                          age={item.caracteristics.birth}
+                          weight={item.caracteristics.weight.value}
+                          height={item.caracteristics.height.value}
+                          universe={item.caracteristics.universe}
+                          onPress={() => {}}
+                      />
+              )}
+                showsVerticalScrollIndicator={false}
+            />
+
+        }
     </FavoritesContent>
 
   </Container>
