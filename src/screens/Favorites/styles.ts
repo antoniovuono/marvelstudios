@@ -55,3 +55,11 @@ export const FavoritesContent = styled.View`
    padding: 0 24px;
 
 `;
+
+export const Description = styled.Text`
+
+   font-size: ${RFValue(14)}px;
+   font-family: 'gilroy-bold';
+   color: ${({ theme }) => theme.colors.primary_title};
+
+`;

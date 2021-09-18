@@ -13,7 +13,8 @@ import {
  GoBackButton,
  IconGoBack,
  FavoriteIcon,
- FavoritesContent
+ FavoritesContent,
+ Description
 } from './styles';
 
 
@@ -60,6 +61,7 @@ return (
     </Header>
 
     <FavoritesContent>
+      <Description> Você tem {favorites.length} personagens favoritados </Description>
         <FlatList 
           data={favorites}
           keyExtractor={ item => item.name}
