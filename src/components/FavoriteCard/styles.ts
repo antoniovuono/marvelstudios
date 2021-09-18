@@ -7,7 +7,7 @@ export const Container = styled.View`
    height: 140px;
    background-color: ${({ theme }) => theme.colors.primary_background};
 
-   border: 1px solid ${({ theme }) => theme.colors.primary_title};
+   border: 1px solid ${({ theme }) => theme.colors.secondary_background};
 
    border-radius: 20px;
 `;
@@ -84,7 +84,7 @@ export const Description = styled.Text`
    font-size: ${RFValue(10)}px;
    margin-top: 5px;
 
-     color: ${({ theme }) => theme.colors.primary_title};
+     color: ${({ theme }) => theme.colors.secondary_background};
 
 `;
 

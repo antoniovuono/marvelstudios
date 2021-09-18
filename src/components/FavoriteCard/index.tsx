@@ -36,22 +36,22 @@ return (
           <InfosContent>
 
             <CaractContnet>
-              <FontAwesome name="birthday-cake" size={20} color="black" />
+              <FontAwesome name="birthday-cake" size={20} color="red" />
               <Description>1970</Description>
             </CaractContnet>
 
             <CaractContnet>
-              <FontAwesome5 name="weight" size={20} color="black" />
+              <FontAwesome5 name="weight" size={20} color="red" />
               <Description>78kg</Description>
             </CaractContnet>
 
             <CaractContnet>
-              <MaterialIcons name="height" size={20} color="black" />
+              <MaterialIcons name="height" size={20} color="red" />
               <Description>1.80m</Description>
             </CaractContnet>
 
             <CaractContnet>
-             <Ionicons name="earth" size={20} color="black" />   
+             <Ionicons name="earth" size={20} color="red" />   
               <Description>Terra</Description>
             </CaractContnet>
 
