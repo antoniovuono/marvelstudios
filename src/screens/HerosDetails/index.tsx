@@ -59,8 +59,6 @@ async function handleAddFavorites() {
     return;
   }
 
-  
-
   navigation.navigate('Favorites');
     
   } catch (error) {
