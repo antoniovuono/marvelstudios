@@ -8,9 +8,9 @@ export const Container = styled.View`
 export const Header = styled.View`
 
    width: 100%;
-   height: 60%;
+   height: 70%;
 
-   background-color: ${({theme}) => theme.colors.primary_background};
+   background-color: ${({theme}) => theme.colors.shape};
 
    align-items: center;
    justify-content: center;
@@ -45,8 +45,11 @@ export const SignInTitle = styled.Text`
 export const Footer = styled.View`
 
    width: 100%;
-   height: 40%;
+   height: 30%;
 
    background-color: ${({theme}) => theme.colors.primary_title};
+
+   padding: 35px 25px; 
+
 
 `;

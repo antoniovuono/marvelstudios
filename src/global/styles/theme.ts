@@ -2,6 +2,7 @@ export default {
     colors: {
 
         primary_background: '#FFFFFF',
+        shape: '#FFFFFF',
         secondary_background: '#000000',
 
         primary_title: '#F2264B',

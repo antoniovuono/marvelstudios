@@ -1,6 +1,10 @@
 import React from 'react';
 
 import Logotipo from '../../assets/images/logotipo.svg';
+import Google from '../../assets/icons/google.svg';
+import Apple from '../../assets/icons/apple.svg';
+
+import { SignInSocialButton } from '../../components/SignInSocialButton';
 
 import {
  Container,
@@ -30,7 +34,17 @@ return (
     </Header>
     
     <Footer>
+        <SignInSocialButton
+          title="Entrar com Google"
+          svg={Google}
+          onPress={() => {}}
+        />
 
+        <SignInSocialButton
+          title="Entrar com Apple"
+          svg={Apple}
+          onPress={() => {}}
+        />
     </Footer>
   </Container>
   );
