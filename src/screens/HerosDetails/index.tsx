@@ -55,7 +55,7 @@ async function handleAddFavorites() {
   if(!ifDataExists) {
     await AsyncStorage.setItem('@marvelstudios:favorites', JSON.stringify([...formattedDate, hero]));
   } else {
-    Alert.alert('Não foi possível favoritar o personagem', 'Você já adicionou esse personagens aos favoritos');
+    Alert.alert('Não foi possível favoritar o personagem', 'Você já adicionou esse personagem aos favoritos');
     return;
   }
 

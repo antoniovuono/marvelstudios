@@ -16,7 +16,7 @@ import {
  Container,
  Header,
  IconList,
- SearchListIcon,
+ LogoutIcon,
  ButtonIconList,
  HeaderContent,
  TitlesSection,
@@ -100,7 +100,7 @@ return (
         <Logotipo />
 
         <ButtonIconList onPress={() => {}}>
-        <SearchListIcon name="search"/>
+        <LogoutIcon name="logout"/>
         </ButtonIconList>
 
       </HeaderContent>

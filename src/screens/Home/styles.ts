@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import { FlatList } from "react-native";
-import { MaterialIcons, Feather } from '@expo/vector-icons';
+import { MaterialIcons, Feather, AntDesign } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { Platform } from "react-native";
 
@@ -38,12 +38,17 @@ export const IconList = styled(MaterialIcons)`
 
 `;
 
-export const ButtonIconList = styled.TouchableOpacity``;
+export const ButtonIconList = styled.TouchableOpacity`
 
-export const SearchListIcon = styled(Feather)`
+
+
+`;
+
+export const LogoutIcon = styled(AntDesign)`
 
    color: ${({theme}) => theme.colors.dark}; 
-   font-size: ${RFValue(24)}px;
+   font-size: ${RFValue(22)}px;
+   color: ${({ theme }) => theme.colors.primary_title};
 `;
 
 export const TitlesSection = styled.View`

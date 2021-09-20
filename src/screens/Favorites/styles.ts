@@ -61,5 +61,6 @@ export const Description = styled.Text`
    font-size: ${RFValue(14)}px;
    font-family: 'gilroy-bold';
    color: ${({ theme }) => theme.colors.primary_title};
+   margin-bottom: 10px;
 
 `;
