@@ -2,7 +2,6 @@ import React, { createContext, ReactNode, useContext, useState, useEffect } from
 import * as AuthSession from 'expo-auth-session';
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-
 const { CLIENT_ID } = process.env;
 const { REDIRECT_URI } = process.env;
 
