@@ -17,6 +17,7 @@ import {
  Description
 } from './styles';
 import { Load } from '../../components/Load';
+import { useAuth } from '../../hooks/auth';
 
 
 export function Favorites(){
@@ -24,12 +25,14 @@ const [favorites, setFavorites] = useState<CharacterDTO[]>([]);
 const [ loading, setLoading ] = useState(true);
 const navigation = useNavigation();
 
+const { user } = useAuth();
+
 function handleGoBack() {
   navigation.goBack();
 }
 
 async function loadFavorites() {
-    const dataKey = '@marvelstudios:favorites';
+    const dataKey = `@marvelstudios:favorites_${user.id}`;
     const storagedItems = await AsyncStorage.getItem(dataKey);
     const favorites = storagedItems ? JSON.parse(storagedItems) : [];
     

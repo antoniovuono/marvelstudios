@@ -3,6 +3,8 @@ import { Alert, StatusBar } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation, useRoute } from '@react-navigation/native';
 
+import { useAuth } from '../../hooks/auth';
+
 import { CharacterDTO } from '../../dtos/CharacterDTO';
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
@@ -41,19 +43,20 @@ interface Params {
 export function HerosDetails() {
 const route = useRoute();
 const { hero } = route.params as Params;
+const { user } = useAuth();
 const navigation = useNavigation();
 
 async function handleAddFavorites() {
   try {
   
-  const dataKey = '@marvelstudios:favorites'; 
+  const dataKey = `@marvelstudios:favorites_${user.id}`; 
   const storagedItems = await AsyncStorage.getItem(dataKey); 
   const formattedDate = storagedItems ? JSON.parse(storagedItems) : [];
   
   const ifDataExists = formattedDate.find((item: CharacterDTO) => item.name === hero.name);
 
   if(!ifDataExists) {
-    await AsyncStorage.setItem('@marvelstudios:favorites', JSON.stringify([...formattedDate, hero]));
+    await AsyncStorage.setItem(`@marvelstudios:favorites_${user.id}`, JSON.stringify([...formattedDate, hero]));
   } else {
     Alert.alert('Não foi possível favoritar o personagem', 'Você já adicionou esse personagem aos favoritos');
     return;
