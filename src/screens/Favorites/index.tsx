@@ -40,6 +40,8 @@ async function loadFavorites() {
     setLoading(false);
 }
 
+
+
 useEffect(() => {
   loadFavorites();
 }, []);
