@@ -4,9 +4,12 @@ import { ThemeProvider } from "styled-components";
 import theme from './src/global/styles/theme';
 import AppLoading from 'expo-app-loading';
 
+import { AuthProvider } from "./src/hooks/auth";
+
 import { useFonts } from 'expo-font';
 
 import { Routes } from './src/routes';
+import { SignIn } from './src/screens/SignIn';
 
 
 
@@ -29,8 +32,9 @@ export default function App() {
     
    <ThemeProvider theme={theme}>
 
-    
-   <Routes />
+    <AuthProvider>
+    <SignIn />
+    </AuthProvider>
 
    </ThemeProvider>
   
