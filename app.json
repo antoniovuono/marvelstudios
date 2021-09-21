@@ -2,6 +2,7 @@
   "expo": {
     "name": "marvelstudios",
     "slug": "marvelstudios",
+    "scheme": "marvelstudios",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
