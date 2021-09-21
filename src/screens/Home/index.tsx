@@ -4,6 +4,8 @@ import { StatusBar } from 'react-native';
 import { useTheme } from 'styled-components';
 import { Load } from '../../components/Load';
 
+import { useAuth } from '../../hooks/auth';
+
 import { api } from '../../services/api';
 import { CharacterDTO } from '../../dtos/CharacterDTO';
 
@@ -29,7 +31,6 @@ import {
 } from './styles';
 
 
-
 export function Home(){
   const [ isLoading, setIsLoading ] = useState(true);
   const [ heros, setHeros ] = useState<CharacterDTO[]>([]);
@@ -37,6 +38,8 @@ export function Home(){
   const [ antiHeros, setAntiHeros ] = useState<CharacterDTO[]>([]);
   const [ alliens, setAlliens ] = useState<CharacterDTO[]>([]);
   const [ humans, setHumans ] = useState<CharacterDTO[]>([]);
+
+  const { user, signOut } = useAuth();
 
 
   const navigation = useNavigation();
@@ -99,7 +102,7 @@ return (
 
         <Logotipo />
 
-        <ButtonIconList onPress={() => {}}>
+        <ButtonIconList onPress={signOut}>
         <LogoutIcon name="logout"/>
         </ButtonIconList>
 
@@ -108,7 +111,7 @@ return (
 
 
     <TitlesSection>
-
+      <SubTitle>Olá {user.name} </SubTitle>
       <SubTitle>Bem vindo ao Marvel Heroes</SubTitle>
       <Title>Escolha o seu personagem</Title>
 
