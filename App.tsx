@@ -9,9 +9,6 @@ import { AuthProvider } from "./src/hooks/auth";
 import { useFonts } from 'expo-font';
 
 import { Routes } from './src/routes';
-import { SignIn } from './src/screens/SignIn';
-
-
 
 export default function App() {
   const [ fontLoaded ] = useFonts({
@@ -33,7 +30,7 @@ export default function App() {
    <ThemeProvider theme={theme}>
 
     <AuthProvider>
-    <SignIn />
+    <Routes />
     </AuthProvider>
 
    </ThemeProvider>
