@@ -15,6 +15,9 @@ DevChallange e foi desenvolvido para treinar conceitos de desenvolvimento mobile
       <li>Styled-components</li>
       <li>Json-server</li>
       <li>Axios</li>
+      <li>AsyncStorage</li>
+      <li>Login Social (Apple e Google)</li>
+      
 
 </ul>
 
