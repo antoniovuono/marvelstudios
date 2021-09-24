@@ -15,7 +15,7 @@ import {
  SignInTitle,
  Footer,
 } from './styles';
-import { Alert } from 'react-native';
+import { Alert, Platform } from 'react-native';
 
 
 export function SignIn(){
@@ -72,11 +72,15 @@ return (
           onPress={handleSignInWithGoogle}
         />
 
+         {
+         Platform.OS === 'ios' &&
         <SignInSocialButton
           title="Entrar com Apple"
           svg={Apple}
           onPress={handleSignInWithApple}
         />
+         }
+
     </Footer>
   </Container>
   );

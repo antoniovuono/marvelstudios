@@ -9,6 +9,7 @@ export function AuthRoutes() {
     return (
         <Navigator
             headerMode="none"
+            initialRouteName="Splash"
         >   
             <Screen 
                 name="Splash"
