@@ -11,8 +11,9 @@ export function AppRoutes(){
 return (
 
     <Navigator
-    headerMode="none"
-    >
+      headerMode="none"
+    > 
+      
           <Screen 
             name="Home"
             component={Home}
