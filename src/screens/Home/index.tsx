@@ -29,6 +29,7 @@ import {
  TitleList,
  RaceCharacterList
 } from './styles';
+import { LoadingAnimation } from '../../components/LoadingAnimation';
 
 
 export function Home(){
@@ -126,7 +127,7 @@ return (
     </CharsMenuSection>
 
 
-    { isLoading ? <Load /> : 
+    { isLoading ? <LoadingAnimation /> : 
 
      <PrimaryList>
 
