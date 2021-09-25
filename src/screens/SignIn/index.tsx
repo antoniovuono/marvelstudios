@@ -16,8 +16,6 @@ import {
  Footer,
 } from './styles';
 import { Alert, Platform } from 'react-native';
-import { Load } from '../../components/Load';
-
 
 export function SignIn(){
 const { signInWithGoogle, signInWithApple } =  useAuth();
@@ -62,14 +60,13 @@ return (
     </Header>
     
     <Footer>
-     
+        
         <SignInSocialButton
           title="Entrar com Google"
           svg={Google}
           onPress={handleSignInWithGoogle}
         />
 
-    
 
          {
          Platform.OS === 'ios' &&

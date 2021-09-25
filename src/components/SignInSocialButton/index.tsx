@@ -1,6 +1,8 @@
 import React from 'react';
 import { RectButtonProps } from "react-native-gesture-handler";
 import { SvgProps } from "react-native-svg";
+import { useAuth } from '../../hooks/auth';
+import { Load } from '../Load';
 
 import {
  Button,
@@ -14,6 +16,8 @@ interface Props extends RectButtonProps {
 }
 
 export function SignInSocialButton({ title, svg: Svg, ...rest }: Props){
+const { isLoggIn } = useAuth();
+
 return (
   <Button {...rest}> 
 
@@ -21,9 +25,11 @@ return (
           <Svg />
       </ImageContainer>
 
+    { isLoggIn === true ? <Load /> : 
       <Text>
           {title}
       </Text>
+    }
 
   </Button>
   );

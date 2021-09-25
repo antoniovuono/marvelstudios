@@ -21,6 +21,7 @@ interface IAuthContextData {
     user: User;
     signInWithGoogle(): Promise<void>;
     signInWithApple(): Promise<void>;
+    isLoggIn: boolean;
     signOut(): Promise<void>;
     userStorageLoading: boolean;
 
@@ -39,12 +40,15 @@ const AuthContext = createContext({} as IAuthContextData);
 function AuthProvider({ children }: AuthProviderProps) {
     const [user, setUser] = useState<User>({} as User);
     const [ userStorageLoading, setUserStorageLoading ] = useState(true);
+    const [ isLoggIn, setIsLoggIn ] = useState(false);
 
     const userStorageKey = '@marvelstudios:user';
 
     async function signInWithGoogle() {
         try {
             
+            setIsLoggIn(true);
+
             const RESPONSE_TYPE = 'token';
             const SCOPE = encodeURI('profile email');
 
@@ -65,7 +69,7 @@ function AuthProvider({ children }: AuthProviderProps) {
                 photo: userInfo.picture
             })
 
-            console.log(userInfo);
+            setIsLoggIn(false);
 
         }
 
@@ -134,6 +138,7 @@ function AuthProvider({ children }: AuthProviderProps) {
              signInWithGoogle,
              signInWithApple,
              userStorageLoading,
+             isLoggIn,
              signOut
              }}>
             { children }

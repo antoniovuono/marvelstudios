@@ -11,7 +11,7 @@ return (
     <ActivityIndicator 
 
     color={theme.colors.primary_title}
-    size="large"
+    size="small"
     style={{ flex: 1}}
     />
 
