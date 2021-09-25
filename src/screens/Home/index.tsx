@@ -1,13 +1,14 @@
 import React,{ useState, useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { StatusBar } from 'react-native';
+import { StatusBar, BackHandler } from 'react-native';
 import { useTheme } from 'styled-components';
-import { Load } from '../../components/Load';
 
 import { useAuth } from '../../hooks/auth';
 
 import { api } from '../../services/api';
 import { CharacterDTO } from '../../dtos/CharacterDTO';
+
+import { LoadingAnimation } from '../../components/LoadingAnimation';
 
 import Logotipo from '../../assets/images/logotipo.svg';
 
@@ -29,7 +30,6 @@ import {
  TitleList,
  RaceCharacterList
 } from './styles';
-import { LoadingAnimation } from '../../components/LoadingAnimation';
 
 
 export function Home(){
@@ -81,6 +81,12 @@ export function Home(){
 
     fetchHeros();
     
+  }, []);
+
+  useEffect(() => {
+    BackHandler.addEventListener('hardwareBackPress', () => {
+      return true;
+    })
   }, []);
 
 return (

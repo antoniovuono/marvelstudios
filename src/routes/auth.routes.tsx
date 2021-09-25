@@ -18,6 +18,9 @@ export function AuthRoutes() {
             <Screen
                 name="SignIn"
                 component={SignIn}
+                options={{
+                    gestureEnabled: false,
+                }}
             />
         </Navigator>
     );
